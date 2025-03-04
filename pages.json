@@ -1,0 +1,78 @@
+{
+	"pages": [ //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
+		{
+			"path": "pages/index/index",
+			"style": {
+				"navigationBarTitleText": "",
+				"enablePullDownRefresh": true,
+				"navigationBarTextStyle": "black"
+			}
+		},
+		{
+			"path" : "pages/login/login",
+			"style" : 
+			{
+				"navigationBarTitleText" : "",				
+				"enablePullDownRefresh": false,
+				"navigationBarTextStyle": "black"
+				
+
+			}
+		},
+		{
+			"path" : "pages/home/index",
+			"style" : 
+			{
+				"navigationBarTitleText" : "",
+				"enablePullDownRefresh": false,
+				"navigationBarTextStyle": "black"
+			}
+		},
+		{
+			"path" : "pages/order/index",
+			"style" : 
+			{
+				"navigationBarTitleText" : "",
+				"enablePullDownRefresh": false,
+				"navigationBarTextStyle": "black"
+			}
+		},
+		{
+			"path" : "pages/mine/mine",
+			"style" : 
+			{
+				"navigationBarTitleText" : "",
+				"enablePullDownRefresh": false,
+				"navigationBarTextStyle": "black"
+			}
+		},
+		{
+			"path" : "pages/home/region",
+			"style" : 
+			{
+				"navigationBarTitleText" : ""
+			}
+		},
+		{
+			"path" : "pages/order/project-info",
+			"style" : 
+			{
+				"navigationBarTitleText" : ""
+			}
+		}
+	],
+	"globalStyle": {
+		"app-plus": {
+			"bounce": "none"
+		},
+		"mp-alipay": {
+			"transparentTitle": "always",
+			"allowsBounceVertical": "NO"
+		},
+		"navigationBarBackgroundColor": "#74c0fc",
+		"navigationBarTitleText": "",
+		"navigationStyle": "custom",
+		"navigationBarTextStyle": "white"
+	},
+	"uniIdRouter": {}
+}

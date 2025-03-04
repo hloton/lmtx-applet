@@ -1,0 +1,10 @@
+{
+  "navigationBarTitleText": "",
+  "enablePullDownRefresh": true,
+  "navigationBarTextStyle": "black",
+  "usingComponents": {
+    "home": "/pages/home/index",
+    "order": "/pages/order/index",
+    "mine": "/pages/mine/mine"
+  }
+}

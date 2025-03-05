@@ -6,7 +6,8 @@
     "pages/order/index",
     "pages/mine/mine",
     "pages/home/region",
-    "pages/order/project-info"
+    "pages/order/project-info",
+    "pages/home/accompany"
   ],
   "subPackages": [],
   "window": {

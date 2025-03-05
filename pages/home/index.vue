@@ -22,8 +22,10 @@
 			<image src="/static/images/home/bg.png" class="title-bg"></image>
 			<view style="padding: 30rpx;padding-bottom: 0;">
 				<u-swiper radius="12" height="300rpx" :list="swiperList" @click="clickswiper" keyName="ad_image_url" indicator indicatorMode="dot" circular></u-swiper>
+				
+				
 				<view class="classification">
-					<image @click="toCreat(item)" :src="`/static/images/home/class${item.type}.png`"
+					<image @click="toProjectDetail(item)" :src="`/static/images/home/class${item.type}.png`"
 					 v-for="(item, index) in typeArr" :key="item.type"></image>
 				</view>
 				<!-- <view class="accompany" @tap="$navto('/pages/home/accompany')"><image :src="$getImgUrl() + '/upload/image/accompany.png'"></image></view> -->
@@ -373,10 +375,11 @@ export default {
 		},
 		
 		//点击项目去项目详情页
-		toProjectDetail() {
-			if (this.orderInfo.from == 1) {
-				this.$navto('/pages/order/project-info?type=' + this.type)
-			}
+		toProjectDetail(item) {
+			if(item.type!='6')
+				this.$navto('/pages/order/project-info?type=' + item.type)
+			else
+			this.$navto('/pages/home/accompany')
 		},
 		//下拉刷新方法
 		async refresherrefresh(){

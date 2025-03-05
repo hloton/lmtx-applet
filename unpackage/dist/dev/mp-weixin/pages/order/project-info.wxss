@@ -1,0 +1,223 @@
+@charset "UTF-8";
+/**
+ * 这里是uni-app内置的常用样式变量
+ *
+ * uni-app 官方扩展插件及插件市场（https://ext.dcloud.net.cn）上很多三方插件均使用了这些样式变量
+ * 如果你是插件开发者，建议你使用scss预处理，并在插件代码中直接使用这些变量（无需 import 这个文件），方便用户通过搭积木的方式开发整体风格一致的App
+ *
+ */
+/**
+ * 如果你是App开发者（插件使用者），你可以通过修改这些变量来定制自己的插件主题，实现自定义主题功能
+ *
+ * 如果你的项目同样使用了scss预处理，你也可以直接在你的 scss 代码中使用如下变量，同时无需 import 这个文件
+ */
+/* 颜色变量 */
+/* 行为相关颜色 */
+/* 文字基本颜色 */
+/* 背景颜色 */
+/* 边框颜色 */
+/* 尺寸变量 */
+/* 文字尺寸 */
+/* 图片尺寸 */
+/* Border Radius */
+/* 水平间距 */
+/* 垂直间距 */
+/* 透明度 */
+/* 文章场景相关 */
+page {
+  background: #F6F7FB;
+}
+.bg-box {
+  position: relative;
+}
+.bg-box .title-logo {
+  width: 100%;
+  height: 500rpx;
+}
+.bg-box .bg-title {
+  position: absolute;
+  left: 74rpx;
+  top: 60rpx;
+  font-size: 50rpx;
+  font-weight: bold;
+  color: #FFFFFF;
+  line-height: 36rpx;
+  text-shadow: 0px 2rpx 16rpx rgba(0, 0, 0, 0.16);
+  z-index: 10;
+}
+.content {
+  position: relative;
+  bottom: 70rpx;
+  padding: 0 20rpx;
+}
+.content .type-info {
+  width: 100%;
+  background: #FFFFFF;
+  box-shadow: 0px 2rpx 18rpx 0px rgba(0, 0, 0, 0.06);
+  border-radius: 20rpx;
+  padding: 60rpx 44rpx;
+  box-sizing: border-box;
+}
+.content .type-info .price {
+  display: flex;
+  align-items: baseline;
+  margin-bottom: 40rpx;
+}
+.content .type-info .price .present-price {
+  font-size: 24rpx;
+  font-weight: 500;
+  color: #333333;
+  margin-right: 30rpx;
+}
+.content .type-info .price .present-price .num {
+  font-size: 42rpx;
+  font-weight: bold;
+  color: #FF4D4D;
+  margin-right: 10rpx;
+}
+.content .type-info .price .original-price {
+  font-size: 24rpx;
+  font-weight: 500;
+  text-decoration: line-through;
+  color: #BAB9B9;
+}
+.content .type-info .info {
+  font-size: 28rpx;
+  font-weight: 500;
+  color: #666666;
+}
+.content .service-content {
+  margin-top: 44rpx;
+}
+.content .service-content .title {
+  font-size: 32rpx;
+  font-weight: bold;
+  color: #333;
+  margin: 0 0 24rpx 20rpx;
+}
+.content .service-content .title .select {
+  color: #55B5FF;
+}
+.content .service-content .title text {
+  margin-right: 80rpx;
+}
+.content .service-content .title-cur {
+  color: #333333;
+}
+.content .service-content .service {
+  width: 716rpx;
+  background: #FFFFFF;
+  box-shadow: 0px 2rpx 18rpx 0px rgba(0, 0, 0, 0.06);
+  border-radius: 20rpx;
+  padding: 30rpx;
+  box-sizing: border-box;
+}
+.content .service-content .service image {
+  width: 100%;
+  height: 1184rpx;
+}
+.content .evaluation {
+  margin-top: 30rpx;
+}
+.content .evaluation .title {
+  font-size: 32rpx;
+  font-weight: bold;
+  color: #333333;
+  margin: 0 0 45rpx 20rpx;
+}
+.content .evaluation .eval {
+  margin: 0 10rpx;
+}
+.content .evaluation .eval .eval-item {
+  width: 100%;
+  background: #FFFFFF;
+  box-shadow: 0px 2rpx 18rpx 0px rgba(0, 0, 0, 0.06);
+  border-radius: 20rpx;
+  margin-bottom: 30rpx;
+  padding: 40rpx 30rpx;
+  box-sizing: border-box;
+}
+.content .evaluation .eval .eval-item .top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid #EBEBEB;
+  padding-bottom: 40rpx;
+}
+.content .evaluation .eval .eval-item .top .left {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.content .evaluation .eval .eval-item .top .left image {
+  width: 76rpx;
+  height: 76rpx;
+  margin-right: 24rpx;
+}
+.content .evaluation .eval .eval-item .top .left .uername {
+  width: 200rpx;
+  font-size: 30rpx;
+  font-weight: bold;
+  color: #333333;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+.content .evaluation .eval .eval-item .top .right {
+  display: flex;
+  align-items: center;
+}
+.content .evaluation .eval .eval-item .top .right .score {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column;
+  font-size: 24rpx;
+  font-weight: 500;
+  color: #333333;
+}
+.content .evaluation .eval .eval-item .top .right .score .num {
+  font-size: 30rpx;
+  font-weight: bold;
+  color: #FF4D4D;
+  margin-bottom: 10rpx;
+}
+.content .evaluation .eval .eval-item .bottom {
+  margin-top: 50rpx;
+}
+.content .evaluation .eval .eval-item .bottom .public {
+  font-size: 28rpx;
+  margin-bottom: 40rpx;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+.content .evaluation .eval .eval-item .bottom .public .key {
+  color: #333333;
+  font-weight: bold;
+}
+.content .evaluation .eval .eval-item .bottom .public .value {
+  color: #666666;
+}
+.content .evaluation .eval .eval-item .bottom .time {
+  font-size: 26rpx;
+  font-weight: 500;
+  color: #ADADAD;
+}
+.content .reservation {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 96rpx;
+  background: #55B5FF;
+  font-size: 36rpx;
+  font-weight: 500;
+  color: #FFFFFF;
+  padding-bottom: constant(safe-area-inset-bottom);
+  padding-bottom: env(safe-area-inset-bottom);
+}
+

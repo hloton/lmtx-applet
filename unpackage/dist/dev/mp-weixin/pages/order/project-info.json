@@ -1,4 +1,10 @@
 {
   "navigationBarTitleText": "",
-  "usingComponents": {}
+  "enablePullDownRefresh": false,
+  "navigationBarTextStyle": "black",
+  "usingComponents": {
+    "top-navigation": "/components/top-navigation/top-navigation",
+    "u-loadmore": "/uni_modules/uview-ui/components/u-loadmore/u-loadmore",
+    "u-empty": "/uni_modules/uview-ui/components/u-empty/u-empty"
+  }
 }

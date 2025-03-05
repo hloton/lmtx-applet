@@ -50,14 +50,27 @@
 			"path" : "pages/home/region",
 			"style" : 
 			{
-				"navigationBarTitleText" : ""
+				"navigationBarTitleText" : "",
+				"enablePullDownRefresh": false,
+				"navigationBarTextStyle": "black"
 			}
 		},
 		{
 			"path" : "pages/order/project-info",
 			"style" : 
 			{
-				"navigationBarTitleText" : ""
+				"navigationBarTitleText" : "",
+				"enablePullDownRefresh": false,
+				"navigationBarTextStyle": "black"
+			}
+		},
+		{
+			"path" : "pages/home/accompany",
+			"style" : 
+			{
+				"navigationBarTitleText" : "",
+				"enablePullDownRefresh": false,
+				"navigationBarTextStyle": "black"
 			}
 		}
 	],

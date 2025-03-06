@@ -6,11 +6,23 @@
 			</template>
 		</top-navigation>
 		
+	
 		
 		<view class="content">
-			<view class="card" v-for="(item,idx) in projectArr" :key="idx" @click="toCreate(item)">
+			<view class="card" v-for="(item,idx) in projectArr" :key="idx" @click="toProjectDetail(item)">
+			<view 
+			    class="image-container"
+			    :style="{backgroundImage: `url(/static/images/home/accompany${idx+1}.png)`}"
+			  >
+			    <!-- 图片渐变层 -->
+			    <view class="image-gradient"></view>
+			  </view>
+			  
+			  
+			<view class="card-content">
+		
 				<view style="display: flex; align-items: center;">
-					<image :src="`/static/images/home/accompany${idx+1}.png`" class="logo"></image>	
+					<!-- <image :src="`/static/images/home/accompany${idx+1}.png`" class="logo"></image>	 -->
 					<view class="type">
 						<view class="type-name">
 							{{item.name}}
@@ -23,8 +35,10 @@
 						</view>
 					</view>	
 				</view>
-				<button>预约</button>
-				
+				<!-- 这个放在医院详情页 -->
+<!-- 				<button class="book-btn">预约</button> -->
+				<u-icon name="arrow-right" color="#b0b0b0"></u-icon>
+		</view>
 			</view>
 		</view>
 	</view>
@@ -52,6 +66,10 @@
 			this.getProjectList();
 		},
 		methods:{
+			//点击项目去项目详情页
+		toProjectDetail(item) {
+				this.$navto('/pages/order/project-info?type=' + item.type)	
+		},
 			//获取背景图
 			getConfig(){
 				this.$request('/applet/index/page/getConfig',{
@@ -105,18 +123,52 @@ page{
 		z-index: 9;
 
 		.card {
+			background-color: #fff; // 备用背景色
+			position: relative;
+			overflow: hidden; /* 添加这行 */
 			width: 100%;
-			// height: 180rpx;
-			background: #FFFFFF;
+			height: 180rpx;
 			box-shadow: 0px 2rpx 18rpx 0px rgba(0, 0, 0, 0.06);
 			border-radius: 20rpx;
 			padding: 48rpx 34rpx;
 			box-sizing: border-box;
 			display: flex;
-			justify-content: space-between;
+			justify-content: space-around;
 			align-items: center;
 			margin-bottom: 30rpx;
+ .image-container {
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    width: 300rpx; // 控制图片显示宽度
+    background-size: cover;
+    background-position: left center;
+    .image-gradient {
+      width: 100%;
+      height: 100%;
+      background: linear-gradient(
+        to right,
+        rgba(255,255,255,0) 0%,
+        rgba(255,255,255,1) 75%
+      );
+   
+    }
+	}
 
+  .card-content {
+    position: relative; /* 确保内容在顶层 */
+    z-index: 99;
+    /* 保持原有样式 */
+    width: 100%;
+    height: 100%;
+    padding: 48rpx 34rpx;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+	margin-left:160rpx;
+  }
 			.logo {
 				width: 76rpx;
 				height: 76rpx;
@@ -138,6 +190,7 @@ page{
 				.label_box {
 					display: flex;
 					flex-wrap: wrap;
+					width:400rpx;
 				}
 
 				.label {
@@ -156,6 +209,19 @@ page{
 					}
 				}
 			}
+			// .book-btn{
+			// 	background-color:#74c0fc;
+			// 	color:#ffffff;
+			// 	width: 130rpx;
+			// 	height:80rpx;
+			// 	align-items:center;
+			// 	font-size:15px;
+			// 	font-weight:600;
+			// 	line-height:80rpx;
+			// }
 		}
 	}
 </style>
+
+
+

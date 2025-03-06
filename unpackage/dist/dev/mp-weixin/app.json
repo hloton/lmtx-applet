@@ -7,7 +7,9 @@
     "pages/mine/mine",
     "pages/home/region",
     "pages/order/project-info",
-    "pages/home/accompany"
+    "pages/home/accompany",
+    "pages/order/create-order",
+    "pages/order/hospital-info"
   ],
   "subPackages": [],
   "window": {

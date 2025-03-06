@@ -2,5 +2,7 @@
   "navigationBarTitleText": "",
   "enablePullDownRefresh": false,
   "navigationBarTextStyle": "black",
-  "usingComponents": {}
+  "usingComponents": {
+    "top-navigation": "/components/top-navigation/top-navigation"
+  }
 }

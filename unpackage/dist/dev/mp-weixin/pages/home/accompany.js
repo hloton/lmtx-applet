@@ -101,7 +101,10 @@ var components
 try {
   components = {
     topNavigation: function () {
-      return __webpack_require__.e(/*! import() | components/top-navigation/top-navigation */ "components/top-navigation/top-navigation").then(__webpack_require__.bind(null, /*! @/components/top-navigation/top-navigation.vue */ 236))
+      return __webpack_require__.e(/*! import() | components/top-navigation/top-navigation */ "components/top-navigation/top-navigation").then(__webpack_require__.bind(null, /*! @/components/top-navigation/top-navigation.vue */ 250))
+    },
+    uIcon: function () {
+      return Promise.all(/*! import() | uni_modules/uview-ui/components/u-icon/u-icon */[__webpack_require__.e("common/vendor"), __webpack_require__.e("uni_modules/uview-ui/components/u-icon/u-icon")]).then(__webpack_require__.bind(null, /*! @/uni_modules/uview-ui/components/u-icon/u-icon.vue */ 305))
     },
   }
 } catch (e) {
@@ -201,6 +204,10 @@ var _default = {
     this.getProjectList();
   },
   methods: {
+    //点击项目去项目详情页
+    toProjectDetail: function toProjectDetail(item) {
+      this.$navto('/pages/order/project-info?type=' + item.type);
+    },
     //获取背景图
     getConfig: function getConfig() {
       var _this = this;

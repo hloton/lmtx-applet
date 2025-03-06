@@ -1,1 +1,1 @@
-<view></view>
+<view class="create-box"><top-navigation vue-id="3bc35b9e-1" bgColor="#ffffff" bind:__l="__l" vue-slots="{{['left-slot']}}"><text slot="left-slot">填写订单</text></top-navigation></view>

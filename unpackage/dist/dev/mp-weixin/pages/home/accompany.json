@@ -3,6 +3,7 @@
   "enablePullDownRefresh": false,
   "navigationBarTextStyle": "black",
   "usingComponents": {
-    "top-navigation": "/components/top-navigation/top-navigation"
+    "top-navigation": "/components/top-navigation/top-navigation",
+    "u-icon": "/uni_modules/uview-ui/components/u-icon/u-icon"
   }
 }

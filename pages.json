@@ -72,6 +72,24 @@
 				"enablePullDownRefresh": false,
 				"navigationBarTextStyle": "black"
 			}
+		},
+		{
+			"path" : "pages/order/create-order",
+			"style" : 
+			{
+				"navigationBarTitleText" : "",
+				"enablePullDownRefresh": false,
+				"navigationBarTextStyle": "black"
+			}
+		},
+		{
+			"path" : "pages/order/hospital-info",
+			"style" : 
+			{
+				"navigationBarTitleText" : "",
+				"enablePullDownRefresh": false,
+				"navigationBarTextStyle": "black"
+			}
 		}
 	],
 	"globalStyle": {

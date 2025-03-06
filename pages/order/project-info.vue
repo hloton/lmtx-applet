@@ -202,7 +202,7 @@
 					})
 				}
 							
-				this.$navto('/pages/order/creat-order')
+				this.$navto('/pages/order/create-order')
 			}
 		}
 	}

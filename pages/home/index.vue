@@ -256,8 +256,9 @@ export default {
 			this.$request('/applet/index/page/getProject',params).then(res=>{
 				console.log('获取项目列表', res);
 				if (res.code == 200) {
-					this.typeArr = res.data;
-							
+					// this.typeArr = res.data;
+					console.log(res.data.length,"changdu")
+					this.typeArr = res.data.length>6?res.data.slice(0, 6):res.data
 				} else {
 					uni.$toast(`获取项目列表失败${res.msg}`);
 				}

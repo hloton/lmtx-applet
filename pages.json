@@ -90,6 +90,13 @@
 				"enablePullDownRefresh": false,
 				"navigationBarTextStyle": "black"
 			}
+		},
+		{
+			"path" : "pages/order/payment",
+			"style" : 
+			{
+				"navigationBarTitleText" : ""
+			}
 		}
 	],
 	"globalStyle": {

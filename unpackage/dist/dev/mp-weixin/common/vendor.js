@@ -23507,7 +23507,294 @@ exports.default = _default;
 /* 239 */,
 /* 240 */,
 /* 241 */,
-/* 242 */,
+/* 242 */
+/*!*******************************************************************!*\
+  !*** D:/0000乐木同行/lmtx-applet/pages/order/components/orderType.js ***!
+  \*******************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = void 0;
+var _default = {
+  '1': [{
+    //全天陪诊
+    title: '就诊人',
+    type: 'patient',
+    value: '',
+    placeholder: '请选择就诊人',
+    event: 'link',
+    must: true,
+    key: 'patients_name'
+  }, {
+    title: '期望就诊时间',
+    type: 'time',
+    value: '',
+    placeholder: '请选择就诊时间',
+    event: 'picker',
+    must: true,
+    key: 'hope_time'
+  }, {
+    title: '科室',
+    type: 'depart',
+    value: '',
+    placeholder: '请选择服务科室',
+    event: 'link',
+    must: true,
+    key: 'hospital_one'
+  }, {
+    title: '服务需求',
+    type: 'textarea',
+    value: '',
+    placeholder: '请输入其他服务需求...',
+    event: 'input',
+    key: 'service_demand'
+  }],
+  '2': [{
+    //小时陪诊
+    title: '就诊人',
+    type: 'patient',
+    value: '',
+    placeholder: '请选择就诊人',
+    event: 'link',
+    must: true,
+    key: 'patients_name'
+  }, {
+    title: '期望就诊时间',
+    type: 'time',
+    value: '',
+    placeholder: '请选择就诊时间',
+    event: 'picker',
+    must: true,
+    key: 'hope_time'
+  }, {
+    title: '科室',
+    type: 'depart',
+    value: '',
+    placeholder: '请选择服务科室',
+    event: 'link',
+    must: true,
+    key: 'hospital_one'
+  }, {
+    title: '服务需求',
+    type: 'textarea',
+    value: '',
+    placeholder: '请输入其他服务需求...',
+    event: 'input',
+    key: 'service_demand'
+  }],
+  '3': [{
+    //代办问诊
+    title: '就诊人',
+    type: 'patient',
+    value: '',
+    placeholder: '请选择就诊人',
+    event: 'link',
+    must: true,
+    key: 'patients_name'
+  }, {
+    title: '期望就诊时间',
+    type: 'time',
+    value: '',
+    placeholder: '请选择就诊时间',
+    event: 'picker',
+    must: true,
+    key: 'hope_time'
+  }, {
+    title: '科室',
+    type: 'depart',
+    value: '',
+    placeholder: '请选择服务科室',
+    event: 'link',
+    must: true,
+    key: 'hospital_one'
+  }, {
+    title: '服务需求',
+    type: 'textarea',
+    value: '',
+    placeholder: '请输入其他服务需求...',
+    event: 'input',
+    key: 'service_demand'
+  }],
+  '4': [{
+    //取送报告
+    title: '就诊人',
+    type: 'patient',
+    value: '',
+    placeholder: '请选择就诊人',
+    event: 'link',
+    must: true,
+    key: 'patients_name'
+  }, {
+    title: '期待处理时间',
+    type: 'time',
+    value: '',
+    placeholder: '请选择处理时间',
+    event: 'picker',
+    must: true,
+    key: 'hope_dispose_time'
+  }, {
+    title: '收件信息',
+    type: 'address',
+    value: '',
+    placeholder: '请选择收件信息',
+    event: 'link',
+    must: true,
+    key: 'consignee'
+  }, {
+    title: '报告信息',
+    type: 'report',
+    value: '',
+    placeholder: '请选择报告信息',
+    event: 'picker',
+    must: true,
+    key: 'report'
+  }, {
+    title: '订单备注',
+    type: 'input',
+    value: '',
+    placeholder: '请输入其他服务要求',
+    event: 'input',
+    key: 'remark'
+  }],
+  '5': [{
+    //代办买药
+    title: '就诊人',
+    type: 'patient',
+    value: '',
+    placeholder: '请选择就诊人',
+    event: 'link',
+    must: true,
+    key: 'patients_name'
+  }, {
+    title: '药物类型',
+    type: 'drug',
+    value: '',
+    placeholder: '请选择药物类型',
+    event: 'picker',
+    must: true,
+    key: 'drug_type'
+  }, {
+    title: '药品名',
+    type: 'input',
+    value: '',
+    placeholder: '请准确输入药品名称',
+    event: 'input',
+    must: true,
+    key: 'drug_name'
+  }, {
+    title: '服务时间',
+    type: 'time',
+    value: '',
+    placeholder: '请选择服务时间',
+    event: 'picker',
+    must: true,
+    key: 'service_time'
+  }, {
+    title: '收件信息',
+    type: 'address',
+    value: '',
+    placeholder: '请选择收件信息',
+    event: 'link',
+    must: true,
+    key: 'consignee'
+  }, {
+    title: '服务需求',
+    type: 'textarea',
+    value: '',
+    placeholder: '请输入其他服务需求...',
+    event: 'input',
+    key: 'service_demand'
+  }],
+  '6': [{
+    //诊前挂号
+    title: '就诊人',
+    type: 'patient',
+    value: '',
+    placeholder: '请选择就诊人',
+    event: 'link',
+    must: true,
+    key: 'patients_name'
+  }, {
+    title: '期望就诊时间',
+    type: 'time',
+    value: '',
+    placeholder: '请选择就诊时间',
+    event: 'picker',
+    must: true,
+    key: 'hope_time'
+  }, {
+    title: '科室',
+    type: 'depart',
+    value: '',
+    placeholder: '请选择服务科室',
+    event: 'link',
+    must: true,
+    key: 'hospital_one'
+  }, {
+    title: '服务需求',
+    type: 'textarea',
+    value: '',
+    placeholder: '请输入其他服务需求...',
+    event: 'input',
+    key: 'service_demand'
+  }],
+  '7': [{
+    //尊享陪诊
+    title: '就诊人',
+    type: 'patient',
+    value: '',
+    placeholder: '请选择就诊人',
+    event: 'link',
+    must: true,
+    key: 'patients_name'
+  }, {
+    title: '期望就诊时间',
+    type: 'time',
+    value: '',
+    placeholder: '请选择就诊时间',
+    event: 'picker',
+    must: true,
+    key: 'hope_time'
+  }, {
+    title: '科室',
+    type: 'depart',
+    value: '',
+    placeholder: '请选择服务科室',
+    event: 'link',
+    must: true,
+    key: 'hospital_one'
+  }, {
+    title: '专享归属',
+    type: 'exclusive',
+    value: '',
+    placeholder: '请选择专享归属',
+    event: 'picker',
+    must: true,
+    key: 'exclusive'
+  }, {
+    title: '服务需求',
+    type: 'textarea',
+    value: '',
+    placeholder: '请输入其他服务需求...',
+    event: 'input',
+    key: 'service_demand'
+  }]
+}; // 1	全天陪诊	就诊人、期望就诊时间、科室、服务需求
+// 2	小时陪诊	就诊人、期望就诊时间、科室、服务需求
+// 3	代办问诊	就诊人、期望就诊时间、科室、服务需求
+// 4	取送报告	期待处理时间、收件信息、报告信息、订单备注
+// 5	代办买药	药物类型、药品名、收件信息、服务时间、服务需求
+// 6	诊前挂号	就诊人、期望就诊时间、科室、服务需求
+// 7	尊享陪诊	就诊人、期望就诊时间、科室、专享归属、服务需求
+exports.default = _default;
+
+/***/ }),
 /* 243 */,
 /* 244 */,
 /* 245 */,
@@ -23527,7 +23814,16 @@ exports.default = _default;
 /* 259 */,
 /* 260 */,
 /* 261 */,
-/* 262 */
+/* 262 */,
+/* 263 */,
+/* 264 */,
+/* 265 */,
+/* 266 */,
+/* 267 */,
+/* 268 */,
+/* 269 */,
+/* 270 */,
+/* 271 */
 /*!*********************************************************************************!*\
   !*** D:/0000乐木同行/lmtx-applet/uni_modules/uview-ui/components/u-swiper/props.js ***!
   \*********************************************************************************/
@@ -23670,14 +23966,14 @@ exports.default = _default;
 /* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/uni-mp-weixin/dist/index.js */ 2)["default"]))
 
 /***/ }),
-/* 263 */,
-/* 264 */,
-/* 265 */,
-/* 266 */,
-/* 267 */,
-/* 268 */,
-/* 269 */,
-/* 270 */
+/* 272 */,
+/* 273 */,
+/* 274 */,
+/* 275 */,
+/* 276 */,
+/* 277 */,
+/* 278 */,
+/* 279 */
 /*!*******************************************************************************!*\
   !*** D:/0000乐木同行/lmtx-applet/uni_modules/uview-ui/components/u-tabs/props.js ***!
   \*******************************************************************************/
@@ -23759,14 +24055,14 @@ exports.default = _default;
 /* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/uni-mp-weixin/dist/index.js */ 2)["default"]))
 
 /***/ }),
-/* 271 */,
-/* 272 */,
-/* 273 */,
-/* 274 */,
-/* 275 */,
-/* 276 */,
-/* 277 */,
-/* 278 */
+/* 280 */,
+/* 281 */,
+/* 282 */,
+/* 283 */,
+/* 284 */,
+/* 285 */,
+/* 286 */,
+/* 287 */
 /*!********************************************************************************!*\
   !*** D:/0000乐木同行/lmtx-applet/uni_modules/uview-ui/components/u-empty/props.js ***!
   \********************************************************************************/
@@ -23843,14 +24139,14 @@ exports.default = _default;
 /* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/uni-mp-weixin/dist/index.js */ 2)["default"]))
 
 /***/ }),
-/* 279 */,
-/* 280 */,
-/* 281 */,
-/* 282 */,
-/* 283 */,
-/* 284 */,
-/* 285 */,
-/* 286 */
+/* 288 */,
+/* 289 */,
+/* 290 */,
+/* 291 */,
+/* 292 */,
+/* 293 */,
+/* 294 */,
+/* 295 */
 /*!***********************************************************************************!*\
   !*** D:/0000乐木同行/lmtx-applet/uni_modules/uview-ui/components/u-loadmore/props.js ***!
   \***********************************************************************************/
@@ -23947,14 +24243,14 @@ exports.default = _default;
 /* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/uni-mp-weixin/dist/index.js */ 2)["default"]))
 
 /***/ }),
-/* 287 */,
-/* 288 */,
-/* 289 */,
-/* 290 */,
-/* 291 */,
-/* 292 */,
-/* 293 */,
-/* 294 */
+/* 296 */,
+/* 297 */,
+/* 298 */,
+/* 299 */,
+/* 300 */,
+/* 301 */,
+/* 302 */,
+/* 303 */
 /*!*******************************************************************************!*\
   !*** D:/0000乐木同行/lmtx-applet/uni_modules/uview-ui/components/u-line/props.js ***!
   \*******************************************************************************/
@@ -24005,14 +24301,14 @@ exports.default = _default;
 /* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/uni-mp-weixin/dist/index.js */ 2)["default"]))
 
 /***/ }),
-/* 295 */,
-/* 296 */,
-/* 297 */,
-/* 298 */,
-/* 299 */,
-/* 300 */,
-/* 301 */,
-/* 302 */
+/* 304 */,
+/* 305 */,
+/* 306 */,
+/* 307 */,
+/* 308 */,
+/* 309 */,
+/* 310 */,
+/* 311 */
 /*!********************************************************************************!*\
   !*** D:/0000乐木同行/lmtx-applet/uni_modules/uview-ui/components/u-popup/props.js ***!
   \********************************************************************************/
@@ -24109,14 +24405,14 @@ exports.default = _default;
 /* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/uni-mp-weixin/dist/index.js */ 2)["default"]))
 
 /***/ }),
-/* 303 */,
-/* 304 */,
-/* 305 */,
-/* 306 */,
-/* 307 */,
-/* 308 */,
-/* 309 */,
-/* 310 */
+/* 312 */,
+/* 313 */,
+/* 314 */,
+/* 315 */,
+/* 316 */,
+/* 317 */,
+/* 318 */,
+/* 319 */
 /*!*******************************************************************************!*\
   !*** D:/0000乐木同行/lmtx-applet/uni_modules/uview-ui/components/u-icon/icons.js ***!
   \*******************************************************************************/
@@ -24347,7 +24643,7 @@ var _default = {
 exports.default = _default;
 
 /***/ }),
-/* 311 */
+/* 320 */
 /*!*******************************************************************************!*\
   !*** D:/0000乐木同行/lmtx-applet/uni_modules/uview-ui/components/u-icon/props.js ***!
   \*******************************************************************************/
@@ -24454,14 +24750,1205 @@ exports.default = _default;
 /* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/uni-mp-weixin/dist/index.js */ 2)["default"]))
 
 /***/ }),
-/* 312 */,
-/* 313 */,
-/* 314 */,
-/* 315 */,
-/* 316 */,
-/* 317 */,
-/* 318 */,
-/* 319 */
+/* 321 */,
+/* 322 */,
+/* 323 */,
+/* 324 */,
+/* 325 */,
+/* 326 */,
+/* 327 */,
+/* 328 */,
+/* 329 */,
+/* 330 */,
+/* 331 */,
+/* 332 */,
+/* 333 */,
+/* 334 */,
+/* 335 */
+/*!***********************************************************************************!*\
+  !*** D:/0000乐木同行/lmtx-applet/uni_modules/uview-ui/components/u-textarea/props.js ***!
+  \***********************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+/* WEBPACK VAR INJECTION */(function(uni) {
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = void 0;
+var _default = {
+  props: {
+    // 输入框的内容
+    value: {
+      type: [String, Number],
+      default: uni.$u.props.textarea.value
+    },
+    // 输入框为空时占位符
+    placeholder: {
+      type: [String, Number],
+      default: uni.$u.props.textarea.placeholder
+    },
+    // 指定placeholder的样式类，注意页面或组件的style中写了scoped时，需要在类名前写/deep/
+    placeholderClass: {
+      type: String,
+      default: uni.$u.props.input.placeholderClass
+    },
+    // 指定placeholder的样式
+    placeholderStyle: {
+      type: [String, Object],
+      default: uni.$u.props.input.placeholderStyle
+    },
+    // 输入框高度
+    height: {
+      type: [String, Number],
+      default: uni.$u.props.textarea.height
+    },
+    // 设置键盘右下角按钮的文字，仅微信小程序，App-vue和H5有效
+    confirmType: {
+      type: String,
+      default: uni.$u.props.textarea.confirmType
+    },
+    // 是否禁用
+    disabled: {
+      type: Boolean,
+      default: uni.$u.props.textarea.disabled
+    },
+    // 是否显示统计字数
+    count: {
+      type: Boolean,
+      default: uni.$u.props.textarea.count
+    },
+    // 是否自动获取焦点，nvue不支持，H5取决于浏览器的实现
+    focus: {
+      type: Boolean,
+      default: uni.$u.props.textarea.focus
+    },
+    // 是否自动增加高度
+    autoHeight: {
+      type: Boolean,
+      default: uni.$u.props.textarea.autoHeight
+    },
+    // 如果textarea是在一个position:fixed的区域，需要显示指定属性fixed为true
+    fixed: {
+      type: Boolean,
+      default: uni.$u.props.textarea.fixed
+    },
+    // 指定光标与键盘的距离
+    cursorSpacing: {
+      type: Number,
+      default: uni.$u.props.textarea.cursorSpacing
+    },
+    // 指定focus时的光标位置
+    cursor: {
+      type: [String, Number],
+      default: uni.$u.props.textarea.cursor
+    },
+    // 是否显示键盘上方带有”完成“按钮那一栏，
+    showConfirmBar: {
+      type: Boolean,
+      default: uni.$u.props.textarea.showConfirmBar
+    },
+    // 光标起始位置，自动聚焦时有效，需与selection-end搭配使用
+    selectionStart: {
+      type: Number,
+      default: uni.$u.props.textarea.selectionStart
+    },
+    // 光标结束位置，自动聚焦时有效，需与selection-start搭配使用
+    selectionEnd: {
+      type: Number,
+      default: uni.$u.props.textarea.selectionEnd
+    },
+    // 键盘弹起时，是否自动上推页面
+    adjustPosition: {
+      type: Boolean,
+      default: uni.$u.props.textarea.adjustPosition
+    },
+    // 是否去掉 iOS 下的默认内边距，只微信小程序有效
+    disableDefaultPadding: {
+      type: Boolean,
+      default: uni.$u.props.textarea.disableDefaultPadding
+    },
+    // focus时，点击页面的时候不收起键盘，只微信小程序有效
+    holdKeyboard: {
+      type: Boolean,
+      default: uni.$u.props.textarea.holdKeyboard
+    },
+    // 最大输入长度，设置为 -1 的时候不限制最大长度
+    maxlength: {
+      type: [String, Number],
+      default: uni.$u.props.textarea.maxlength
+    },
+    // 边框类型，surround-四周边框，bottom-底部边框
+    border: {
+      type: String,
+      default: uni.$u.props.textarea.border
+    },
+    // 用于处理或者过滤输入框内容的方法
+    formatter: {
+      type: [Function, null],
+      default: uni.$u.props.textarea.formatter
+    }
+  }
+};
+exports.default = _default;
+/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/uni-mp-weixin/dist/index.js */ 2)["default"]))
+
+/***/ }),
+/* 336 */,
+/* 337 */,
+/* 338 */,
+/* 339 */,
+/* 340 */,
+/* 341 */
+/*!********************************************************************************!*\
+  !*** D:/0000乐木同行/lmtx-applet/uni_modules/uview-ui/components/u-input/props.js ***!
+  \********************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+/* WEBPACK VAR INJECTION */(function(uni) {
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = void 0;
+var _default = {
+  props: {
+    // 输入的值
+    value: {
+      type: [String, Number],
+      default: uni.$u.props.input.value
+    },
+    // 输入框类型
+    // number-数字输入键盘，app-vue下可以输入浮点数，app-nvue和小程序平台下只能输入整数
+    // idcard-身份证输入键盘，微信、支付宝、百度、QQ小程序
+    // digit-带小数点的数字键盘，App的nvue页面、微信、支付宝、百度、头条、QQ小程序
+    // text-文本输入键盘
+    type: {
+      type: String,
+      default: uni.$u.props.input.type
+    },
+    // 如果 textarea 是在一个 position:fixed 的区域，需要显示指定属性 fixed 为 true，
+    // 兼容性：微信小程序、百度小程序、字节跳动小程序、QQ小程序
+    fixed: {
+      type: Boolean,
+      default: uni.$u.props.input.fixed
+    },
+    // 是否禁用输入框
+    disabled: {
+      type: Boolean,
+      default: uni.$u.props.input.disabled
+    },
+    // 禁用状态时的背景色
+    disabledColor: {
+      type: String,
+      default: uni.$u.props.input.disabledColor
+    },
+    // 是否显示清除控件
+    clearable: {
+      type: Boolean,
+      default: uni.$u.props.input.clearable
+    },
+    // 是否密码类型
+    password: {
+      type: Boolean,
+      default: uni.$u.props.input.password
+    },
+    // 最大输入长度，设置为 -1 的时候不限制最大长度
+    maxlength: {
+      type: [String, Number],
+      default: uni.$u.props.input.maxlength
+    },
+    // 	输入框为空时的占位符
+    placeholder: {
+      type: String,
+      default: uni.$u.props.input.placeholder
+    },
+    // 指定placeholder的样式类，注意页面或组件的style中写了scoped时，需要在类名前写/deep/
+    placeholderClass: {
+      type: String,
+      default: uni.$u.props.input.placeholderClass
+    },
+    // 指定placeholder的样式
+    placeholderStyle: {
+      type: [String, Object],
+      default: uni.$u.props.input.placeholderStyle
+    },
+    // 是否显示输入字数统计，只在 type ="text"或type ="textarea"时有效
+    showWordLimit: {
+      type: Boolean,
+      default: uni.$u.props.input.showWordLimit
+    },
+    // 设置右下角按钮的文字，有效值：send|search|next|go|done，兼容性详见uni-app文档
+    // https://uniapp.dcloud.io/component/input
+    // https://uniapp.dcloud.io/component/textarea
+    confirmType: {
+      type: String,
+      default: uni.$u.props.input.confirmType
+    },
+    // 点击键盘右下角按钮时是否保持键盘不收起，H5无效
+    confirmHold: {
+      type: Boolean,
+      default: uni.$u.props.input.confirmHold
+    },
+    // focus时，点击页面的时候不收起键盘，微信小程序有效
+    holdKeyboard: {
+      type: Boolean,
+      default: uni.$u.props.input.holdKeyboard
+    },
+    // 自动获取焦点
+    // 在 H5 平台能否聚焦以及软键盘是否跟随弹出，取决于当前浏览器本身的实现。nvue 页面不支持，需使用组件的 focus()、blur() 方法控制焦点
+    focus: {
+      type: Boolean,
+      default: uni.$u.props.input.focus
+    },
+    // 键盘收起时，是否自动失去焦点，目前仅App3.0.0+有效
+    autoBlur: {
+      type: Boolean,
+      default: uni.$u.props.input.autoBlur
+    },
+    // 是否去掉 iOS 下的默认内边距，仅微信小程序，且type=textarea时有效
+    disableDefaultPadding: {
+      type: Boolean,
+      default: uni.$u.props.input.disableDefaultPadding
+    },
+    // 指定focus时光标的位置
+    cursor: {
+      type: [String, Number],
+      default: uni.$u.props.input.cursor
+    },
+    // 输入框聚焦时底部与键盘的距离
+    cursorSpacing: {
+      type: [String, Number],
+      default: uni.$u.props.input.cursorSpacing
+    },
+    // 光标起始位置，自动聚集时有效，需与selection-end搭配使用
+    selectionStart: {
+      type: [String, Number],
+      default: uni.$u.props.input.selectionStart
+    },
+    // 光标结束位置，自动聚集时有效，需与selection-start搭配使用
+    selectionEnd: {
+      type: [String, Number],
+      default: uni.$u.props.input.selectionEnd
+    },
+    // 键盘弹起时，是否自动上推页面
+    adjustPosition: {
+      type: Boolean,
+      default: uni.$u.props.input.adjustPosition
+    },
+    // 输入框内容对齐方式，可选值为：left|center|right
+    inputAlign: {
+      type: String,
+      default: uni.$u.props.input.inputAlign
+    },
+    // 输入框字体的大小
+    fontSize: {
+      type: [String, Number],
+      default: uni.$u.props.input.fontSize
+    },
+    // 输入框字体颜色
+    color: {
+      type: String,
+      default: uni.$u.props.input.color
+    },
+    // 输入框前置图标
+    prefixIcon: {
+      type: String,
+      default: uni.$u.props.input.prefixIcon
+    },
+    // 前置图标样式，对象或字符串
+    prefixIconStyle: {
+      type: [String, Object],
+      default: uni.$u.props.input.prefixIconStyle
+    },
+    // 输入框后置图标
+    suffixIcon: {
+      type: String,
+      default: uni.$u.props.input.suffixIcon
+    },
+    // 后置图标样式，对象或字符串
+    suffixIconStyle: {
+      type: [String, Object],
+      default: uni.$u.props.input.suffixIconStyle
+    },
+    // 边框类型，surround-四周边框，bottom-底部边框，none-无边框
+    border: {
+      type: String,
+      default: uni.$u.props.input.border
+    },
+    // 是否只读，与disabled不同之处在于disabled会置灰组件，而readonly则不会
+    readonly: {
+      type: Boolean,
+      default: uni.$u.props.input.readonly
+    },
+    // 输入框形状，circle-圆形，square-方形
+    shape: {
+      type: String,
+      default: uni.$u.props.input.shape
+    },
+    // 用于处理或者过滤输入框内容的方法
+    formatter: {
+      type: [Function, null],
+      default: uni.$u.props.input.formatter
+    }
+  }
+};
+exports.default = _default;
+/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/uni-mp-weixin/dist/index.js */ 2)["default"]))
+
+/***/ }),
+/* 342 */,
+/* 343 */,
+/* 344 */,
+/* 345 */,
+/* 346 */,
+/* 347 */
+/*!*****************************************************************************************!*\
+  !*** D:/0000乐木同行/lmtx-applet/uni_modules/uview-ui/components/u-checkbox-group/props.js ***!
+  \*****************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+/* WEBPACK VAR INJECTION */(function(uni) {
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = void 0;
+var _default = {
+  props: {
+    // 标识符
+    name: {
+      type: String,
+      default: uni.$u.props.checkboxGroup.name
+    },
+    // 绑定的值
+    value: {
+      type: Array,
+      default: uni.$u.props.checkboxGroup.value
+    },
+    // 形状，circle-圆形，square-方形
+    shape: {
+      type: String,
+      default: uni.$u.props.checkboxGroup.shape
+    },
+    // 是否禁用全部checkbox
+    disabled: {
+      type: Boolean,
+      default: uni.$u.props.checkboxGroup.disabled
+    },
+    // 选中状态下的颜色，如设置此值，将会覆盖parent的activeColor值
+    activeColor: {
+      type: String,
+      default: uni.$u.props.checkboxGroup.activeColor
+    },
+    // 未选中的颜色
+    inactiveColor: {
+      type: String,
+      default: uni.$u.props.checkboxGroup.inactiveColor
+    },
+    // 整个组件的尺寸，默认px
+    size: {
+      type: [String, Number],
+      default: uni.$u.props.checkboxGroup.size
+    },
+    // 布局方式，row-横向，column-纵向
+    placement: {
+      type: String,
+      default: uni.$u.props.checkboxGroup.placement
+    },
+    // label的字体大小，px单位
+    labelSize: {
+      type: [String, Number],
+      default: uni.$u.props.checkboxGroup.labelSize
+    },
+    // label的字体颜色
+    labelColor: {
+      type: [String],
+      default: uni.$u.props.checkboxGroup.labelColor
+    },
+    // 是否禁止点击文本操作
+    labelDisabled: {
+      type: Boolean,
+      default: uni.$u.props.checkboxGroup.labelDisabled
+    },
+    // 图标颜色
+    iconColor: {
+      type: String,
+      default: uni.$u.props.checkboxGroup.iconColor
+    },
+    // 图标的大小，单位px
+    iconSize: {
+      type: [String, Number],
+      default: uni.$u.props.checkboxGroup.iconSize
+    },
+    // 勾选图标的对齐方式，left-左边，right-右边
+    iconPlacement: {
+      type: String,
+      default: uni.$u.props.checkboxGroup.iconPlacement
+    },
+    // 竖向配列时，是否显示下划线
+    borderBottom: {
+      type: Boolean,
+      default: uni.$u.props.checkboxGroup.borderBottom
+    }
+  }
+};
+exports.default = _default;
+/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/uni-mp-weixin/dist/index.js */ 2)["default"]))
+
+/***/ }),
+/* 348 */,
+/* 349 */,
+/* 350 */,
+/* 351 */,
+/* 352 */,
+/* 353 */,
+/* 354 */,
+/* 355 */
+/*!***********************************************************************************!*\
+  !*** D:/0000乐木同行/lmtx-applet/uni_modules/uview-ui/components/u-checkbox/props.js ***!
+  \***********************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+/* WEBPACK VAR INJECTION */(function(uni) {
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = void 0;
+var _default = {
+  props: {
+    // checkbox的名称
+    name: {
+      type: [String, Number, Boolean],
+      default: uni.$u.props.checkbox.name
+    },
+    // 形状，square为方形，circle为圆型
+    shape: {
+      type: String,
+      default: uni.$u.props.checkbox.shape
+    },
+    // 整体的大小
+    size: {
+      type: [String, Number],
+      default: uni.$u.props.checkbox.size
+    },
+    // 是否默认选中
+    checked: {
+      type: Boolean,
+      default: uni.$u.props.checkbox.checked
+    },
+    // 是否禁用
+    disabled: {
+      type: [String, Boolean],
+      default: uni.$u.props.checkbox.disabled
+    },
+    // 选中状态下的颜色，如设置此值，将会覆盖parent的activeColor值
+    activeColor: {
+      type: String,
+      default: uni.$u.props.checkbox.activeColor
+    },
+    // 未选中的颜色
+    inactiveColor: {
+      type: String,
+      default: uni.$u.props.checkbox.inactiveColor
+    },
+    // 图标的大小，单位px
+    iconSize: {
+      type: [String, Number],
+      default: uni.$u.props.checkbox.iconSize
+    },
+    // 图标颜色
+    iconColor: {
+      type: String,
+      default: uni.$u.props.checkbox.iconColor
+    },
+    // label提示文字，因为nvue下，直接slot进来的文字，由于特殊的结构，无法修改样式
+    label: {
+      type: [String, Number],
+      default: uni.$u.props.checkbox.label
+    },
+    // label的字体大小，px单位
+    labelSize: {
+      type: [String, Number],
+      default: uni.$u.props.checkbox.labelSize
+    },
+    // label的颜色
+    labelColor: {
+      type: String,
+      default: uni.$u.props.checkbox.labelColor
+    },
+    // 是否禁止点击提示语选中复选框
+    labelDisabled: {
+      type: [String, Boolean],
+      default: uni.$u.props.checkbox.labelDisabled
+    }
+  }
+};
+exports.default = _default;
+/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/uni-mp-weixin/dist/index.js */ 2)["default"]))
+
+/***/ }),
+/* 356 */,
+/* 357 */,
+/* 358 */,
+/* 359 */,
+/* 360 */,
+/* 361 */,
+/* 362 */,
+/* 363 */
+/*!******************************************************************************************!*\
+  !*** D:/0000乐木同行/lmtx-applet/uni_modules/uview-ui/components/u-datetime-picker/props.js ***!
+  \******************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+/* WEBPACK VAR INJECTION */(function(uni) {
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = void 0;
+var _default = {
+  props: {
+    // 是否打开组件
+    show: {
+      type: Boolean,
+      default: uni.$u.props.datetimePicker.show
+    },
+    // 是否展示顶部的操作栏
+    showToolbar: {
+      type: Boolean,
+      default: uni.$u.props.datetimePicker.showToolbar
+    },
+    // 绑定值
+    value: {
+      type: [String, Number],
+      default: uni.$u.props.datetimePicker.value
+    },
+    // 顶部标题
+    title: {
+      type: String,
+      default: uni.$u.props.datetimePicker.title
+    },
+    // 展示格式，mode=date为日期选择，mode=time为时间选择，mode=year-month为年月选择，mode=datetime为日期时间选择
+    mode: {
+      type: String,
+      default: uni.$u.props.datetimePicker.mode
+    },
+    // 可选的最大时间
+    maxDate: {
+      type: Number,
+      // 最大默认值为后10年
+      default: uni.$u.props.datetimePicker.maxDate
+    },
+    // 可选的最小时间
+    minDate: {
+      type: Number,
+      // 最小默认值为前10年
+      default: uni.$u.props.datetimePicker.minDate
+    },
+    // 可选的最小小时，仅mode=time有效
+    minHour: {
+      type: Number,
+      default: uni.$u.props.datetimePicker.minHour
+    },
+    // 可选的最大小时，仅mode=time有效
+    maxHour: {
+      type: Number,
+      default: uni.$u.props.datetimePicker.maxHour
+    },
+    // 可选的最小分钟，仅mode=time有效
+    minMinute: {
+      type: Number,
+      default: uni.$u.props.datetimePicker.minMinute
+    },
+    // 可选的最大分钟，仅mode=time有效
+    maxMinute: {
+      type: Number,
+      default: uni.$u.props.datetimePicker.maxMinute
+    },
+    // 选项过滤函数
+    filter: {
+      type: [Function, null],
+      default: uni.$u.props.datetimePicker.filter
+    },
+    // 选项格式化函数
+    formatter: {
+      type: [Function, null],
+      default: uni.$u.props.datetimePicker.formatter
+    },
+    // 是否显示加载中状态
+    loading: {
+      type: Boolean,
+      default: uni.$u.props.datetimePicker.loading
+    },
+    // 各列中，单个选项的高度
+    itemHeight: {
+      type: [String, Number],
+      default: uni.$u.props.datetimePicker.itemHeight
+    },
+    // 取消按钮的文字
+    cancelText: {
+      type: String,
+      default: uni.$u.props.datetimePicker.cancelText
+    },
+    // 确认按钮的文字
+    confirmText: {
+      type: String,
+      default: uni.$u.props.datetimePicker.confirmText
+    },
+    // 取消按钮的颜色
+    cancelColor: {
+      type: String,
+      default: uni.$u.props.datetimePicker.cancelColor
+    },
+    // 确认按钮的颜色
+    confirmColor: {
+      type: String,
+      default: uni.$u.props.datetimePicker.confirmColor
+    },
+    // 每列中可见选项的数量
+    visibleItemCount: {
+      type: [String, Number],
+      default: uni.$u.props.datetimePicker.visibleItemCount
+    },
+    // 是否允许点击遮罩关闭选择器
+    closeOnClickOverlay: {
+      type: Boolean,
+      default: uni.$u.props.datetimePicker.closeOnClickOverlay
+    },
+    // 各列的默认索引
+    defaultIndex: {
+      type: Array,
+      default: uni.$u.props.datetimePicker.defaultIndex
+    }
+  }
+};
+exports.default = _default;
+/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/uni-mp-weixin/dist/index.js */ 2)["default"]))
+
+/***/ }),
+/* 364 */
+/*!***********************************************************************!*\
+  !*** D:/0000乐木同行/lmtx-applet/uni_modules/uview-ui/libs/util/dayjs.js ***!
+  \***********************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_RESULT__;var _typeof = __webpack_require__(/*! @babel/runtime/helpers/typeof */ 13);
+!function (t, e) {
+  ( false ? undefined : _typeof(exports)) === 'object' && typeof module !== 'undefined' ? module.exports = e() :  true ? !(__WEBPACK_AMD_DEFINE_FACTORY__ = (e),
+				__WEBPACK_AMD_DEFINE_RESULT__ = (typeof __WEBPACK_AMD_DEFINE_FACTORY__ === 'function' ?
+				(__WEBPACK_AMD_DEFINE_FACTORY__.call(exports, __webpack_require__, exports, module)) :
+				__WEBPACK_AMD_DEFINE_FACTORY__),
+				__WEBPACK_AMD_DEFINE_RESULT__ !== undefined && (module.exports = __WEBPACK_AMD_DEFINE_RESULT__)) : undefined;
+}(this, function () {
+  'use strict';
+
+  var t = 'millisecond';
+  var e = 'second';
+  var n = 'minute';
+  var r = 'hour';
+  var i = 'day';
+  var s = 'week';
+  var u = 'month';
+  var a = 'quarter';
+  var o = 'year';
+  var f = 'date';
+  var h = /^(\d{4})[-/]?(\d{1,2})?[-/]?(\d{0,2})[^0-9]*(\d{1,2})?:?(\d{1,2})?:?(\d{1,2})?.?(\d+)?$/;
+  var c = /\[([^\]]+)]|Y{1,4}|M{1,4}|D{1,2}|d{1,4}|H{1,2}|h{1,2}|a|A|m{1,2}|s{1,2}|Z{1,2}|SSS/g;
+  var d = {
+    name: 'en',
+    weekdays: 'Sunday_Monday_Tuesday_Wednesday_Thursday_Friday_Saturday'.split('_'),
+    months: 'January_February_March_April_May_June_July_August_September_October_November_December'.split('_')
+  };
+  var $ = function $(t, e, n) {
+    var r = String(t);
+    return !r || r.length >= e ? t : "".concat(Array(e + 1 - r.length).join(n)).concat(t);
+  };
+  var l = {
+    s: $,
+    z: function z(t) {
+      var e = -t.utcOffset();
+      var n = Math.abs(e);
+      var r = Math.floor(n / 60);
+      var i = n % 60;
+      return "".concat((e <= 0 ? '+' : '-') + $(r, 2, '0'), ":").concat($(i, 2, '0'));
+    },
+    m: function t(e, n) {
+      if (e.date() < n.date()) return -t(n, e);
+      var r = 12 * (n.year() - e.year()) + (n.month() - e.month());
+      var i = e.clone().add(r, u);
+      var s = n - i < 0;
+      var a = e.clone().add(r + (s ? -1 : 1), u);
+      return +(-(r + (n - i) / (s ? i - a : a - i)) || 0);
+    },
+    a: function a(t) {
+      return t < 0 ? Math.ceil(t) || 0 : Math.floor(t);
+    },
+    p: function p(h) {
+      return {
+        M: u,
+        y: o,
+        w: s,
+        d: i,
+        D: f,
+        h: r,
+        m: n,
+        s: e,
+        ms: t,
+        Q: a
+      }[h] || String(h || '').toLowerCase().replace(/s$/, '');
+    },
+    u: function u(t) {
+      return void 0 === t;
+    }
+  };
+  var y = 'en';
+  var M = {};
+  M[y] = d;
+  var m = function m(t) {
+    return t instanceof S;
+  };
+  var D = function D(t, e, n) {
+    var r;
+    if (!t) return y;
+    if (typeof t === 'string') M[t] && (r = t), e && (M[t] = e, r = t);else {
+      var _i = t.name;
+      M[_i] = t, r = _i;
+    }
+    return !n && r && (y = r), r || !n && y;
+  };
+  var v = function v(t, e) {
+    if (m(t)) return t.clone();
+    var n = _typeof(e) === 'object' ? e : {};
+    return n.date = t, n.args = arguments, new S(n);
+  };
+  var g = l;
+  g.l = D, g.i = m, g.w = function (t, e) {
+    return v(t, {
+      locale: e.$L,
+      utc: e.$u,
+      x: e.$x,
+      $offset: e.$offset
+    });
+  };
+  var S = function () {
+    function d(t) {
+      this.$L = D(t.locale, null, !0), this.parse(t);
+    }
+    var $ = d.prototype;
+    return $.parse = function (t) {
+      this.$d = function (t) {
+        var e = t.date;
+        var n = t.utc;
+        if (e === null) return new Date(NaN);
+        if (g.u(e)) return new Date();
+        if (e instanceof Date) return new Date(e);
+        if (typeof e === 'string' && !/Z$/i.test(e)) {
+          var _r = e.match(h);
+          if (_r) {
+            var _i2 = _r[2] - 1 || 0;
+            var _s = (_r[7] || '0').substring(0, 3);
+            return n ? new Date(Date.UTC(_r[1], _i2, _r[3] || 1, _r[4] || 0, _r[5] || 0, _r[6] || 0, _s)) : new Date(_r[1], _i2, _r[3] || 1, _r[4] || 0, _r[5] || 0, _r[6] || 0, _s);
+          }
+        }
+        return new Date(e);
+      }(t), this.$x = t.x || {}, this.init();
+    }, $.init = function () {
+      var t = this.$d;
+      this.$y = t.getFullYear(), this.$M = t.getMonth(), this.$D = t.getDate(), this.$W = t.getDay(), this.$H = t.getHours(), this.$m = t.getMinutes(), this.$s = t.getSeconds(), this.$ms = t.getMilliseconds();
+    }, $.$utils = function () {
+      return g;
+    }, $.isValid = function () {
+      return !(this.$d.toString() === 'Invalid Date');
+    }, $.isSame = function (t, e) {
+      var n = v(t);
+      return this.startOf(e) <= n && n <= this.endOf(e);
+    }, $.isAfter = function (t, e) {
+      return v(t) < this.startOf(e);
+    }, $.isBefore = function (t, e) {
+      return this.endOf(e) < v(t);
+    }, $.$g = function (t, e, n) {
+      return g.u(t) ? this[e] : this.set(n, t);
+    }, $.unix = function () {
+      return Math.floor(this.valueOf() / 1e3);
+    }, $.valueOf = function () {
+      return this.$d.getTime();
+    }, $.startOf = function (t, a) {
+      var h = this;
+      var c = !!g.u(a) || a;
+      var d = g.p(t);
+      var $ = function $(t, e) {
+        var n = g.w(h.$u ? Date.UTC(h.$y, e, t) : new Date(h.$y, e, t), h);
+        return c ? n : n.endOf(i);
+      };
+      var l = function l(t, e) {
+        return g.w(h.toDate()[t].apply(h.toDate('s'), (c ? [0, 0, 0, 0] : [23, 59, 59, 999]).slice(e)), h);
+      };
+      var y = this.$W;
+      var M = this.$M;
+      var m = this.$D;
+      var D = "set".concat(this.$u ? 'UTC' : '');
+      switch (d) {
+        case o:
+          return c ? $(1, 0) : $(31, 11);
+        case u:
+          return c ? $(1, M) : $(0, M + 1);
+        case s:
+          var v = this.$locale().weekStart || 0;
+          var S = (y < v ? y + 7 : y) - v;
+          return $(c ? m - S : m + (6 - S), M);
+        case i:
+        case f:
+          return l("".concat(D, "Hours"), 0);
+        case r:
+          return l("".concat(D, "Minutes"), 1);
+        case n:
+          return l("".concat(D, "Seconds"), 2);
+        case e:
+          return l("".concat(D, "Milliseconds"), 3);
+        default:
+          return this.clone();
+      }
+    }, $.endOf = function (t) {
+      return this.startOf(t, !1);
+    }, $.$set = function (s, a) {
+      var h;
+      var c = g.p(s);
+      var d = "set".concat(this.$u ? 'UTC' : '');
+      var $ = (h = {}, h[i] = "".concat(d, "Date"), h[f] = "".concat(d, "Date"), h[u] = "".concat(d, "Month"), h[o] = "".concat(d, "FullYear"), h[r] = "".concat(d, "Hours"), h[n] = "".concat(d, "Minutes"), h[e] = "".concat(d, "Seconds"), h[t] = "".concat(d, "Milliseconds"), h)[c];
+      var l = c === i ? this.$D + (a - this.$W) : a;
+      if (c === u || c === o) {
+        var _y = this.clone().set(f, 1);
+        _y.$d[$](l), _y.init(), this.$d = _y.set(f, Math.min(this.$D, _y.daysInMonth())).$d;
+      } else $ && this.$d[$](l);
+      return this.init(), this;
+    }, $.set = function (t, e) {
+      return this.clone().$set(t, e);
+    }, $.get = function (t) {
+      return this[g.p(t)]();
+    }, $.add = function (t, a) {
+      var f;
+      var h = this;
+      t = Number(t);
+      var c = g.p(a);
+      var d = function d(e) {
+        var n = v(h);
+        return g.w(n.date(n.date() + Math.round(e * t)), h);
+      };
+      if (c === u) return this.set(u, this.$M + t);
+      if (c === o) return this.set(o, this.$y + t);
+      if (c === i) return d(1);
+      if (c === s) return d(7);
+      var $ = (f = {}, f[n] = 6e4, f[r] = 36e5, f[e] = 1e3, f)[c] || 1;
+      var l = this.$d.getTime() + t * $;
+      return g.w(l, this);
+    }, $.subtract = function (t, e) {
+      return this.add(-1 * t, e);
+    }, $.format = function (t) {
+      var e = this;
+      if (!this.isValid()) return 'Invalid Date';
+      var n = t || 'YYYY-MM-DDTHH:mm:ssZ';
+      var r = g.z(this);
+      var i = this.$locale();
+      var s = this.$H;
+      var u = this.$m;
+      var a = this.$M;
+      var o = i.weekdays;
+      var f = i.months;
+      var h = function h(t, r, i, s) {
+        return t && (t[r] || t(e, n)) || i[r].substr(0, s);
+      };
+      var d = function d(t) {
+        return g.s(s % 12 || 12, t, '0');
+      };
+      var $ = i.meridiem || function (t, e, n) {
+        var r = t < 12 ? 'AM' : 'PM';
+        return n ? r.toLowerCase() : r;
+      };
+      var l = {
+        YY: String(this.$y).slice(-2),
+        YYYY: this.$y,
+        M: a + 1,
+        MM: g.s(a + 1, 2, '0'),
+        MMM: h(i.monthsShort, a, f, 3),
+        MMMM: h(f, a),
+        D: this.$D,
+        DD: g.s(this.$D, 2, '0'),
+        d: String(this.$W),
+        dd: h(i.weekdaysMin, this.$W, o, 2),
+        ddd: h(i.weekdaysShort, this.$W, o, 3),
+        dddd: o[this.$W],
+        H: String(s),
+        HH: g.s(s, 2, '0'),
+        h: d(1),
+        hh: d(2),
+        a: $(s, u, !0),
+        A: $(s, u, !1),
+        m: String(u),
+        mm: g.s(u, 2, '0'),
+        s: String(this.$s),
+        ss: g.s(this.$s, 2, '0'),
+        SSS: g.s(this.$ms, 3, '0'),
+        Z: r
+      };
+      return n.replace(c, function (t, e) {
+        return e || l[t] || r.replace(':', '');
+      });
+    }, $.utcOffset = function () {
+      return 15 * -Math.round(this.$d.getTimezoneOffset() / 15);
+    }, $.diff = function (t, f, h) {
+      var c;
+      var d = g.p(f);
+      var $ = v(t);
+      var l = 6e4 * ($.utcOffset() - this.utcOffset());
+      var y = this - $;
+      var M = g.m(this, $);
+      return M = (c = {}, c[o] = M / 12, c[u] = M, c[a] = M / 3, c[s] = (y - l) / 6048e5, c[i] = (y - l) / 864e5, c[r] = y / 36e5, c[n] = y / 6e4, c[e] = y / 1e3, c)[d] || y, h ? M : g.a(M);
+    }, $.daysInMonth = function () {
+      return this.endOf(u).$D;
+    }, $.$locale = function () {
+      return M[this.$L];
+    }, $.locale = function (t, e) {
+      if (!t) return this.$L;
+      var n = this.clone();
+      var r = D(t, e, !0);
+      return r && (n.$L = r), n;
+    }, $.clone = function () {
+      return g.w(this.$d, this);
+    }, $.toDate = function () {
+      return new Date(this.valueOf());
+    }, $.toJSON = function () {
+      return this.isValid() ? this.toISOString() : null;
+    }, $.toISOString = function () {
+      return this.$d.toISOString();
+    }, $.toString = function () {
+      return this.$d.toUTCString();
+    }, d;
+  }();
+  var p = S.prototype;
+  return v.prototype = p, [['$ms', t], ['$s', e], ['$m', n], ['$H', r], ['$W', i], ['$M', u], ['$y', o], ['$D', f]].forEach(function (t) {
+    p[t[1]] = function (e) {
+      return this.$g(e, t[0], t[1]);
+    };
+  }), v.extend = function (t, e) {
+    return t.$i || (t(e, S, v), t.$i = !0), v;
+  }, v.locale = D, v.isDayjs = m, v.unix = function (t) {
+    return v(1e3 * t);
+  }, v.en = M[y], v.Ls = M, v.p = {}, v;
+});
+
+/***/ }),
+/* 365 */,
+/* 366 */,
+/* 367 */,
+/* 368 */,
+/* 369 */,
+/* 370 */,
+/* 371 */,
+/* 372 */
+/*!*********************************************************************************!*\
+  !*** D:/0000乐木同行/lmtx-applet/uni_modules/uview-ui/components/u-picker/props.js ***!
+  \*********************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+/* WEBPACK VAR INJECTION */(function(uni) {
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = void 0;
+var _default = {
+  props: {
+    // 是否展示picker弹窗
+    show: {
+      type: Boolean,
+      default: uni.$u.props.picker.show
+    },
+    // 是否展示顶部的操作栏
+    showToolbar: {
+      type: Boolean,
+      default: uni.$u.props.picker.showToolbar
+    },
+    // 顶部标题
+    title: {
+      type: String,
+      default: uni.$u.props.picker.title
+    },
+    // 对象数组，设置每一列的数据
+    columns: {
+      type: Array,
+      default: uni.$u.props.picker.columns
+    },
+    // 是否显示加载中状态
+    loading: {
+      type: Boolean,
+      default: uni.$u.props.picker.loading
+    },
+    // 各列中，单个选项的高度
+    itemHeight: {
+      type: [String, Number],
+      default: uni.$u.props.picker.itemHeight
+    },
+    // 取消按钮的文字
+    cancelText: {
+      type: String,
+      default: uni.$u.props.picker.cancelText
+    },
+    // 确认按钮的文字
+    confirmText: {
+      type: String,
+      default: uni.$u.props.picker.confirmText
+    },
+    // 取消按钮的颜色
+    cancelColor: {
+      type: String,
+      default: uni.$u.props.picker.cancelColor
+    },
+    // 确认按钮的颜色
+    confirmColor: {
+      type: String,
+      default: uni.$u.props.picker.confirmColor
+    },
+    // 选择器只有一列时，默认选中项的索引，从0开始
+    singleIndex: {
+      type: [String, Number],
+      default: uni.$u.props.picker.singleIndex
+    },
+    // 每列中可见选项的数量
+    visibleItemCount: {
+      type: [String, Number],
+      default: uni.$u.props.picker.visibleItemCount
+    },
+    // 选项对象中，需要展示的属性键名
+    keyName: {
+      type: String,
+      default: uni.$u.props.picker.keyName
+    },
+    // 是否允许点击遮罩关闭选择器
+    closeOnClickOverlay: {
+      type: Boolean,
+      default: uni.$u.props.picker.closeOnClickOverlay
+    },
+    // 各列的默认索引
+    defaultIndex: {
+      type: Array,
+      default: uni.$u.props.picker.defaultIndex
+    },
+    // 是否在手指松开时立即触发 change 事件。若不开启则会在滚动动画结束后触发 change 事件，只在微信2.21.1及以上有效
+    immediateChange: {
+      type: Boolean,
+      default: uni.$u.props.picker.immediateChange
+    }
+  }
+};
+exports.default = _default;
+/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/uni-mp-weixin/dist/index.js */ 2)["default"]))
+
+/***/ }),
+/* 373 */,
+/* 374 */,
+/* 375 */,
+/* 376 */,
+/* 377 */,
+/* 378 */,
+/* 379 */,
+/* 380 */
+/*!************************************************************************************!*\
+  !*** D:/0000乐木同行/lmtx-applet/uni_modules/uview-ui/components/u-read-more/props.js ***!
+  \************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+/* WEBPACK VAR INJECTION */(function(uni) {
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = void 0;
+var _default2 = {
+  props: {
+    // 默认的显示占位高度
+    showHeight: {
+      type: [String, Number],
+      default: uni.$u.props.readMore.showHeight
+    },
+    // 展开后是否显示"收起"按钮
+    toggle: {
+      type: Boolean,
+      default: uni.$u.props.readMore.toggle
+    },
+    // 关闭时的提示文字
+    closeText: {
+      type: String,
+      default: uni.$u.props.readMore.closeText
+    },
+    // 展开时的提示文字
+    openText: {
+      type: String,
+      default: uni.$u.props.readMore.openText
+    },
+    // 提示的文字颜色
+    color: {
+      type: String,
+      default: uni.$u.props.readMore.color
+    },
+    // 提示文字的大小
+    fontSize: {
+      type: [String, Number],
+      default: uni.$u.props.readMore.fontSize
+    },
+    // 是否显示阴影
+    // 此参数不能写在props/readMore.js中进行默认配置，因为使用了条件编译，在外部js中
+    // uni无法准确识别当前是否处于nvue还是非nvue下
+    shadowStyle: {
+      type: Object,
+      default: function _default() {
+        return {
+          backgroundImage: 'linear-gradient(-180deg, rgba(255, 255, 255, 0) 0%, #fff 80%)',
+          paddingTop: '100px',
+          marginTop: '-100px'
+        };
+      }
+    },
+    // 段落首行缩进的字符个数
+    textIndent: {
+      type: String,
+      default: uni.$u.props.readMore.textIndent
+    },
+    // open和close事件时，将此参数返回在回调参数中
+    name: {
+      type: [String, Number],
+      default: uni.$u.props.readMore.name
+    }
+  }
+};
+exports.default = _default2;
+/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/uni-mp-weixin/dist/index.js */ 2)["default"]))
+
+/***/ }),
+/* 381 */,
+/* 382 */,
+/* 383 */,
+/* 384 */,
+/* 385 */,
+/* 386 */,
+/* 387 */,
+/* 388 */
 /*!***************************************************************************************!*\
   !*** D:/0000乐木同行/lmtx-applet/uni_modules/uview-ui/components/u-loading-icon/props.js ***!
   \***************************************************************************************/
@@ -24538,14 +26025,14 @@ exports.default = _default;
 /* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/uni-mp-weixin/dist/index.js */ 2)["default"]))
 
 /***/ }),
-/* 320 */,
-/* 321 */,
-/* 322 */,
-/* 323 */,
-/* 324 */,
-/* 325 */,
-/* 326 */,
-/* 327 */
+/* 389 */,
+/* 390 */,
+/* 391 */,
+/* 392 */,
+/* 393 */,
+/* 394 */,
+/* 395 */,
+/* 396 */
 /*!*******************************************************************************************!*\
   !*** D:/0000乐木同行/lmtx-applet/uni_modules/uview-ui/components/u-swiper-indicator/props.js ***!
   \*******************************************************************************************/
@@ -24592,14 +26079,14 @@ exports.default = _default;
 /* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/uni-mp-weixin/dist/index.js */ 2)["default"]))
 
 /***/ }),
-/* 328 */,
-/* 329 */,
-/* 330 */,
-/* 331 */,
-/* 332 */,
-/* 333 */,
-/* 334 */,
-/* 335 */
+/* 397 */,
+/* 398 */,
+/* 399 */,
+/* 400 */,
+/* 401 */,
+/* 402 */,
+/* 403 */,
+/* 404 */
 /*!********************************************************************************!*\
   !*** D:/0000乐木同行/lmtx-applet/uni_modules/uview-ui/components/u-badge/props.js ***!
   \********************************************************************************/
@@ -24689,14 +26176,14 @@ exports.default = _default;
 /* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/uni-mp-weixin/dist/index.js */ 2)["default"]))
 
 /***/ }),
-/* 336 */,
-/* 337 */,
-/* 338 */,
-/* 339 */,
-/* 340 */,
-/* 341 */,
-/* 342 */,
-/* 343 */
+/* 405 */,
+/* 406 */,
+/* 407 */,
+/* 408 */,
+/* 409 */,
+/* 410 */,
+/* 411 */,
+/* 412 */
 /*!**********************************************************************************!*\
   !*** D:/0000乐木同行/lmtx-applet/uni_modules/uview-ui/components/u-overlay/props.js ***!
   \**********************************************************************************/
@@ -24738,14 +26225,14 @@ exports.default = _default;
 /* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/uni-mp-weixin/dist/index.js */ 2)["default"]))
 
 /***/ }),
-/* 344 */,
-/* 345 */,
-/* 346 */,
-/* 347 */,
-/* 348 */,
-/* 349 */,
-/* 350 */,
-/* 351 */
+/* 413 */,
+/* 414 */,
+/* 415 */,
+/* 416 */,
+/* 417 */,
+/* 418 */,
+/* 419 */,
+/* 420 */
 /*!*************************************************************************************!*\
   !*** D:/0000乐木同行/lmtx-applet/uni_modules/uview-ui/components/u-transition/props.js ***!
   \*************************************************************************************/
@@ -24787,7 +26274,7 @@ exports.default = _default;
 /* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/uni-mp-weixin/dist/index.js */ 2)["default"]))
 
 /***/ }),
-/* 352 */
+/* 421 */
 /*!******************************************************************************************!*\
   !*** D:/0000乐木同行/lmtx-applet/uni_modules/uview-ui/components/u-transition/transition.js ***!
   \******************************************************************************************/
@@ -24804,7 +26291,7 @@ Object.defineProperty(exports, "__esModule", {
 exports.default = void 0;
 var _regenerator = _interopRequireDefault(__webpack_require__(/*! @babel/runtime/regenerator */ 41));
 var _asyncToGenerator2 = _interopRequireDefault(__webpack_require__(/*! @babel/runtime/helpers/asyncToGenerator */ 43));
-var _nvueAniMap = _interopRequireDefault(__webpack_require__(/*! ./nvue.ani-map.js */ 353));
+var _nvueAniMap = _interopRequireDefault(__webpack_require__(/*! ./nvue.ani-map.js */ 422));
 // 定义一个一定时间后自动成功的promise，让调用nextTick方法处，进入下一个then方法
 var nextTick = function nextTick() {
   return new Promise(function (resolve) {
@@ -24896,7 +26383,7 @@ var _default = {
 exports.default = _default;
 
 /***/ }),
-/* 353 */
+/* 422 */
 /*!********************************************************************************************!*\
   !*** D:/0000乐木同行/lmtx-applet/uni_modules/uview-ui/components/u-transition/nvue.ani-map.js ***!
   \********************************************************************************************/
@@ -25089,14 +26576,14 @@ var _default = {
 exports.default = _default;
 
 /***/ }),
-/* 354 */,
-/* 355 */,
-/* 356 */,
-/* 357 */,
-/* 358 */,
-/* 359 */,
-/* 360 */,
-/* 361 */
+/* 423 */,
+/* 424 */,
+/* 425 */,
+/* 426 */,
+/* 427 */,
+/* 428 */,
+/* 429 */,
+/* 430 */
 /*!*************************************************************************************!*\
   !*** D:/0000乐木同行/lmtx-applet/uni_modules/uview-ui/components/u-status-bar/props.js ***!
   \*************************************************************************************/
@@ -25122,14 +26609,14 @@ exports.default = _default;
 /* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/uni-mp-weixin/dist/index.js */ 2)["default"]))
 
 /***/ }),
-/* 362 */,
-/* 363 */,
-/* 364 */,
-/* 365 */,
-/* 366 */,
-/* 367 */,
-/* 368 */,
-/* 369 */
+/* 431 */,
+/* 432 */,
+/* 433 */,
+/* 434 */,
+/* 435 */,
+/* 436 */,
+/* 437 */,
+/* 438 */
 /*!**************************************************************************************!*\
   !*** D:/0000乐木同行/lmtx-applet/uni_modules/uview-ui/components/u-safe-bottom/props.js ***!
   \**************************************************************************************/
@@ -25149,40 +26636,31 @@ var _default = {
 exports.default = _default;
 
 /***/ }),
-/* 370 */,
-/* 371 */,
-/* 372 */,
-/* 373 */,
-/* 374 */,
-/* 375 */,
-/* 376 */,
-/* 377 */,
-/* 378 */,
-/* 379 */,
-/* 380 */,
-/* 381 */,
-/* 382 */,
-/* 383 */,
-/* 384 */,
-/* 385 */,
-/* 386 */,
-/* 387 */,
-/* 388 */,
-/* 389 */,
-/* 390 */,
-/* 391 */,
-/* 392 */,
-/* 393 */,
-/* 394 */,
-/* 395 */,
-/* 396 */,
-/* 397 */,
-/* 398 */,
-/* 399 */,
-/* 400 */
-/*!************************************************************************************!*\
-  !*** D:/0000乐木同行/lmtx-applet/uni_modules/uview-ui/components/u-read-more/props.js ***!
-  \************************************************************************************/
+/* 439 */,
+/* 440 */,
+/* 441 */,
+/* 442 */,
+/* 443 */,
+/* 444 */,
+/* 445 */,
+/* 446 */,
+/* 447 */,
+/* 448 */,
+/* 449 */,
+/* 450 */,
+/* 451 */,
+/* 452 */,
+/* 453 */,
+/* 454 */,
+/* 455 */,
+/* 456 */,
+/* 457 */,
+/* 458 */,
+/* 459 */,
+/* 460 */
+/*!**********************************************************************************!*\
+  !*** D:/0000乐木同行/lmtx-applet/uni_modules/uview-ui/components/u-toolbar/props.js ***!
+  \**********************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -25193,75 +26671,52 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 exports.default = void 0;
-var _default2 = {
+var _default = {
   props: {
-    // 默认的显示占位高度
-    showHeight: {
-      type: [String, Number],
-      default: uni.$u.props.readMore.showHeight
-    },
-    // 展开后是否显示"收起"按钮
-    toggle: {
+    // 是否展示工具条
+    show: {
       type: Boolean,
-      default: uni.$u.props.readMore.toggle
+      default: uni.$u.props.toolbar.show
     },
-    // 关闭时的提示文字
-    closeText: {
+    // 取消按钮的文字
+    cancelText: {
       type: String,
-      default: uni.$u.props.readMore.closeText
+      default: uni.$u.props.toolbar.cancelText
     },
-    // 展开时的提示文字
-    openText: {
+    // 确认按钮的文字
+    confirmText: {
       type: String,
-      default: uni.$u.props.readMore.openText
+      default: uni.$u.props.toolbar.confirmText
     },
-    // 提示的文字颜色
-    color: {
+    // 取消按钮的颜色
+    cancelColor: {
       type: String,
-      default: uni.$u.props.readMore.color
+      default: uni.$u.props.toolbar.cancelColor
     },
-    // 提示文字的大小
-    fontSize: {
-      type: [String, Number],
-      default: uni.$u.props.readMore.fontSize
-    },
-    // 是否显示阴影
-    // 此参数不能写在props/readMore.js中进行默认配置，因为使用了条件编译，在外部js中
-    // uni无法准确识别当前是否处于nvue还是非nvue下
-    shadowStyle: {
-      type: Object,
-      default: function _default() {
-        return {
-          backgroundImage: 'linear-gradient(-180deg, rgba(255, 255, 255, 0) 0%, #fff 80%)',
-          paddingTop: '100px',
-          marginTop: '-100px'
-        };
-      }
-    },
-    // 段落首行缩进的字符个数
-    textIndent: {
+    // 确认按钮的颜色
+    confirmColor: {
       type: String,
-      default: uni.$u.props.readMore.textIndent
+      default: uni.$u.props.toolbar.confirmColor
     },
-    // open和close事件时，将此参数返回在回调参数中
-    name: {
-      type: [String, Number],
-      default: uni.$u.props.readMore.name
+    // 标题文字
+    title: {
+      type: String,
+      default: uni.$u.props.toolbar.title
     }
   }
 };
-exports.default = _default2;
+exports.default = _default;
 /* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/uni-mp-weixin/dist/index.js */ 2)["default"]))
 
 /***/ }),
-/* 401 */,
-/* 402 */,
-/* 403 */,
-/* 404 */,
-/* 405 */,
-/* 406 */,
-/* 407 */,
-/* 408 */
+/* 461 */,
+/* 462 */,
+/* 463 */,
+/* 464 */,
+/* 465 */,
+/* 466 */,
+/* 467 */,
+/* 468 */
 /*!*******************************************************************************!*\
   !*** D:/0000乐木同行/lmtx-applet/uni_modules/uview-ui/components/u-text/props.js ***!
   \*******************************************************************************/
@@ -25389,12 +26844,12 @@ exports.default = _default;
 /* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/uni-mp-weixin/dist/index.js */ 2)["default"]))
 
 /***/ }),
-/* 409 */,
-/* 410 */,
-/* 411 */,
-/* 412 */,
-/* 413 */,
-/* 414 */
+/* 469 */,
+/* 470 */,
+/* 471 */,
+/* 472 */,
+/* 473 */,
+/* 474 */
 /*!*******************************************************************************!*\
   !*** D:/0000乐木同行/lmtx-applet/uni_modules/uview-ui/components/u-text/value.js ***!
   \*******************************************************************************/
@@ -25502,7 +26957,7 @@ exports.default = _default;
 /* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/uni-mp-weixin/dist/index.js */ 2)["default"]))
 
 /***/ }),
-/* 415 */
+/* 475 */
 /*!*************************************************************************!*\
   !*** D:/0000乐木同行/lmtx-applet/uni_modules/uview-ui/libs/mixin/button.js ***!
   \*************************************************************************/
@@ -25532,7 +26987,7 @@ var _default = {
 exports.default = _default;
 
 /***/ }),
-/* 416 */
+/* 476 */
 /*!***************************************************************************!*\
   !*** D:/0000乐木同行/lmtx-applet/uni_modules/uview-ui/libs/mixin/openType.js ***!
   \***************************************************************************/
@@ -25574,14 +27029,14 @@ var _default = {
 exports.default = _default;
 
 /***/ }),
-/* 417 */,
-/* 418 */,
-/* 419 */,
-/* 420 */,
-/* 421 */,
-/* 422 */,
-/* 423 */,
-/* 424 */
+/* 477 */,
+/* 478 */,
+/* 479 */,
+/* 480 */,
+/* 481 */,
+/* 482 */,
+/* 483 */,
+/* 484 */
 /*!*******************************************************************************!*\
   !*** D:/0000乐木同行/lmtx-applet/uni_modules/uview-ui/components/u-link/props.js ***!
   \*******************************************************************************/

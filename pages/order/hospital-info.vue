@@ -80,9 +80,7 @@
 									</view>	
 								</view>
 								<!-- 这个放在医院详情页 -->
-								<button class="book-btn">预约</button>
-								<!-- <u-icon name="arrow-right" color="#b0b0b0"></u-icon> -->
-						</view>
+								<button class="book-btn">预约</button>						</view>
 							</view>
 			</view>
 
@@ -134,11 +132,11 @@
 				}
 				this.$store.commit('SET_ININT_ORDER', {}) //初始化创建订单数据
 				this.$store.commit('SET_ORDER_DATA', {
-					project_type: data.id,
+					project_type: data.id,//这里是项目id
 					money: data.is_price ? data.original_price : data.price, //是原价还是现价
 					from: 1
 				})
-				this.$navto('/pages/order/creat-order', true)
+				this.$navto('/pages/order/create-order', true)
 			},
 			getHospitalDetail() {
 				this.$request('/applet/index/page/getHospitalDetail', {

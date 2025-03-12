@@ -9,7 +9,8 @@
     "pages/order/project-info",
     "pages/home/accompany",
     "pages/order/create-order",
-    "pages/order/hospital-info"
+    "pages/order/hospital-info",
+    "pages/order/payment"
   ],
   "subPackages": [],
   "window": {

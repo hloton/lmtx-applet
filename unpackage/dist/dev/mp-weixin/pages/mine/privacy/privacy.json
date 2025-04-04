@@ -1,0 +1,7 @@
+{
+  "navigationBarTitleText": "",
+  "usingComponents": {
+    "top-navigation": "/components/top-navigation/top-navigation",
+    "u-parse": "/uni_modules/uview-ui/components/u-parse/u-parse"
+  }
+}

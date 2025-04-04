@@ -145,6 +145,16 @@
 	@import "../../libs/css/components.scss";
 
 	.u-swipe-action-item {
+		
+		width: 690rpx;
+		height: 180rpx;
+		background: #FFFFFF;
+		box-shadow: 0rpx 2rpx 18rpx 0rpx rgba(0, 0, 0, 0.06);
+		border-radius: 20rpx;
+		margin: 30rpx;
+		display: flex;
+		
+		
 		position: relative;
 		overflow: hidden;
 		/* #ifndef APP-NVUE || MP-WEIXIN */

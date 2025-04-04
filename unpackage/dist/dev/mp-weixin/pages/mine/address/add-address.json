@@ -1,0 +1,6 @@
+{
+  "navigationBarTitleText": "",
+  "usingComponents": {
+    "top-navigation": "/components/top-navigation/top-navigation"
+  }
+}

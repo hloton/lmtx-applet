@@ -75,7 +75,7 @@
 			// this.getProvince();
 			// this.getCity();
 		},computed:{
-			...mapGetters(['isLogin','curAddress']),
+			...mapGetters(['islogin','curAddress']),
 			scrollToHeight(){
 				let temp = `calc(${this.screenHeight}px - ${this.statusHeight}px - 180rpx)`
 				return temp

@@ -12,6 +12,7 @@
 					<text class="exp">服务类型</text>
 					<view class="row-right" @click="toProjectDetail">
 						<text class="right-text black">{{orderType[type]}}</text>
+						<u-icon name="arrow-right" color="#B0B0B0" size="18" v-if="orderInfo.from == 1"></u-icon>
 					</view>
 				</view>	
 			</view>
@@ -24,7 +25,8 @@
 						<u-icon name="arrow-right" color="#B0B0B0" size="18"></u-icon>
 					</view>
 				</view> -->
-				<view class="list-row" v-if="orderInfo.from == 1 || orderInfo.from == 3">
+				<!-- <view class="list-row" v-if="orderInfo.from == 1 || orderInfo.from == 3"> -->
+				<view class="list-row" >
 					<text class="exp">医院</text>
 					<view class="row-right" @click="showHospital = true">
 						<text class="right-text">{{orderInfo.hospital_name || '请选择医院'}}</text>
@@ -123,26 +125,22 @@ import indexList from "../../uni_modules/uview-ui/libs/config/props/indexList.js
 	export default {
 		data() {
 			return {
-				orderType: ['', '全程陪诊', '小时陪诊', '代办问诊', '取送报告', '代办买药', '诊前挂号', '专享陪诊'],
-				orderInfo:{},//订单信息
-				dataList:[],//必填列表项
+				orderType: ['', '全程陪诊', '半天陪诊', '代办问诊', '取送报告', '代办买药', '诊前挂号', '专享陪诊','延时服务'],
+				type: 1,
+				serve: '',
 				checked: [],
-				type:1,//订单类型,默认是第一项，在onload会重新获取当前订单的type
-				serve:'',
+				dataList: [],
 				time: Number(new Date()),
-				minDate: Date.now(),
-				show:false,//就诊时间-时间选择器显示
-				reportPop: false,//报告显示
+				show: false,
+				opreateIndex: 0,
+				reportPop: false,
 				activeReport: 0,
-				drugPop: false,//药物显示
-				drugType: ['处方药', '非处方药'],
-				activeDrug: 0,
-				attentions:'',//注意事项
-				serviceContent: '',
-				showHospital: false,//显示医院
+				reportType: ['CT结果', '检测报告', '验血报告', '其他'],
+				hospitalName: '广东第一大医院',
+				showHospital: false,
 				hospitalArr: [],
-				showExclusive: false,//显示专享
-				exclusiveArr: [
+				showExclusive: false,
+				exclusiveArr: [[
 					{
 						name: '老人专享'
 					}, {
@@ -150,34 +148,44 @@ import indexList from "../../uni_modules/uview-ui/libs/config/props/indexList.js
 					}, {
 						name: '孕妇专享'
 					}
-				],
-				opreateIndex: 0,
+				]],
+				drugPop: false,
+				drugType: ['处方药', '非处方药'],
+				activeDrug: 0,
+				orderInfo: {},
+				minDate: Date.now(),
+				attentions: '',
+				serviceContent: ''
 			};
+		},
+		components: {
+			stepBar
+		},
+		computed:{
+			...mapGetters(["curAddress"])
 		},
 		onLoad(option){
 			this.orderInfo=this.$store.state.user.orderInfo//获取订单信息
 			this.type=this.orderInfo.project_type//获取订单类型
 			this.dataList=deepCopy(orderData[this.type])//写死的
-			if (this.orderInfo.from == 1 || this.orderInfo.from == 3) {//1项目2医院3服务人员
+			this.defaultHosp=this.orderInfo.hospital_id?this.orderInfo.hospital_id-1:0
+			console.log(this.orderInfo,"this.orderinfo")
+			console.log(this.defaultHosp,"默认选中医院")
+			// if (this.orderInfo.from == 1 || this.orderInfo.from == 3) {//1项目2医院3服务人员
 				//获取医院列表
 				this.getHospital()
 				// 微信小程序需要用此写法
 				this.$nextTick(() => {
 					this.$refs.datetimePicker.setFormatter(this.formatter)
 				})
-			}
+			// }
 		},
 		//页面展示，整合store数据和 dataList数据
 		onShow() {
 			this.updateOrder();
 			this.getProjectInfo();
 		},
-		components: {
-			'step-bar':stepBar
-		},
-		computed:{
-			...mapGetters(["curAddress"])
-		},
+	
 		methods:{
 			//初始化页面数据
 			updateOrder(){
@@ -204,6 +212,7 @@ import indexList from "../../uni_modules/uview-ui/libs/config/props/indexList.js
 				this.$request('/applet/index/page/getHomeProduct',params).then(res=>{
 					if(res.code==200){
 						this.hospitalArr.push(res.data)
+						console.log(this.hospitalArr,"hospitalarr")
 					}
 					else{
 						uni.$toast(res.msg)
@@ -242,20 +251,20 @@ import indexList from "../../uni_modules/uview-ui/libs/config/props/indexList.js
 						this.reportPop=true
 					}
 					if(item.type=='exclusive'){
-						item.showExclusive=true
+						this.showExclusive=true
 					}
 					if(item.type=='drug'){
-						item.drugPop=true
+						this.drugPop=true
 					}break;
 					case'link'://跳转
 					if(item.type=='patient'){//选择就诊人
 						this.$navto('/pages/mine/patient/select-patient?type=1',true)
-					}else if(item.type=='depart'){//选择部门
+					}else if(item.type=='depart'){//选择就诊科室
 						if(!this.orderInfo.hospital_id){
 							return uni.$toast('请先选择医院')
 						}
 						this.$navto('/pages/order/department?id='+this.orderInfo.hospital_id)
-					}else if(item.type=='address'){
+					}else if(item.type=='address'){//收货地址
 						this.$navto('/pages/mine/address/address?type=1')
 					}
 					break;
@@ -305,6 +314,7 @@ import indexList from "../../uni_modules/uview-ui/libs/config/props/indexList.js
 			},
 			//选择医院
 			checkHospital(e){
+				console.log(e,"选医院")
 				this.$store.commit('SET_ORDER_DATA',{
 						hospital_name:e.value[0].name,
 						hospital_id:e.value[0].id
@@ -378,7 +388,7 @@ import indexList from "../../uni_modules/uview-ui/libs/config/props/indexList.js
 					if(res.code==200){
 						uni.$toast('订单提交成功！')
 						setTimeout(()=>{
-							this.$navto('/pages/order/payment?orderId='+res.data.id)
+							this.$navto('/pages/order/payment?orderId='+res.data.id)//跳去付款页面
 						},1000)
 					}else{
 						uni.$toast(res.msg)

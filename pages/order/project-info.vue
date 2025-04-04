@@ -30,8 +30,12 @@
 				<text :class="{'select':checkServe == 1}" @click="checkServe = 1">服务须知</text>
 			</view>
 			<view class="service">
-				<image :src="checkServe ? $getImgUrl() + info.service_guidelines : $getImgUrl() + info.service_content" mode="aspectFit"></image>
+				<image :src="checkServe ? $getImgUrl() + info.service_guidelines : $getImgUrl() + info.service_content" mode="widthFix"></image>
+				<text v-if="checkServe == 1">退订协议
+1、如需退订,请在就诊前一个工作日下午6：00前联系客服退订，如若超过退订时间或用户未按约定时间到达约定地点的，不予退订。
+2、服务退订成功后用户可重新下单。</text>
 			</view>
+			
 		</view>
 		
 		<view class="evaluation">
@@ -42,7 +46,7 @@
 				<view class="eval-item" v-for="(item,index) in evaluteArr" :key="index" @click="$navto(`/pages/order/evaluate-detail?id=${item.id}`)">
 					<view class="top">
 						<view class="left">
-							<image :src="item.photo" mode="aspectFit"></image>
+							<image src="/static/images/mine/default.png" mode="aspectFit"></image>
 							<view class="uername">
 								{{item.nickname}}
 							</view>
@@ -155,11 +159,11 @@
 			getEvaluteList(){
 				this.status='loadmore'
 				this.$request('/applet/index/page/getEvaluate',{
-					project_if:this.projectId,
+					project_id:this.projectId,
 					pageNum:this.pageNum,
 					pageSize:this.pageSize
 				}).then(res=>{
-					if(res.data.code==200){
+					if(res.code==200){
 						this.evaluteArr=[...this.evaluteArr,...res.data]
 						this.totalPage=Math.ceil(res.total_rows/this.pageSize)
 						if(!res.total_rows){
@@ -172,7 +176,7 @@
 					}
 					else{
 						this.notFound=true
-						this.notFoundTxt=res.msg
+						this.notFoundTxt='暂无评价'
 					}
 				})
 			},
@@ -311,7 +315,7 @@ page {
 	
 				image {
 					width: 100%;
-					height: 1184rpx;
+					height: auto;
 				}
 			}
 		}

@@ -1,0 +1,8 @@
+{
+  "navigationBarTitleText": "",
+  "usingComponents": {
+    "top-navigation": "/components/top-navigation/top-navigation",
+    "u-alert": "/uni_modules/uview-ui/components/u-alert/u-alert",
+    "u-notify": "/uni_modules/uview-ui/components/u-notify/u-notify"
+  }
+}

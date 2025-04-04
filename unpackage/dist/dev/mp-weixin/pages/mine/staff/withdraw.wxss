@@ -1,0 +1,150 @@
+@charset "UTF-8";
+/**
+ * 这里是uni-app内置的常用样式变量
+ *
+ * uni-app 官方扩展插件及插件市场（https://ext.dcloud.net.cn）上很多三方插件均使用了这些样式变量
+ * 如果你是插件开发者，建议你使用scss预处理，并在插件代码中直接使用这些变量（无需 import 这个文件），方便用户通过搭积木的方式开发整体风格一致的App
+ *
+ */
+/**
+ * 如果你是App开发者（插件使用者），你可以通过修改这些变量来定制自己的插件主题，实现自定义主题功能
+ *
+ * 如果你的项目同样使用了scss预处理，你也可以直接在你的 scss 代码中使用如下变量，同时无需 import 这个文件
+ */
+/* 颜色变量 */
+/* 行为相关颜色 */
+/* 文字基本颜色 */
+/* 背景颜色 */
+/* 边框颜色 */
+/* 尺寸变量 */
+/* 文字尺寸 */
+/* 图片尺寸 */
+/* Border Radius */
+/* 水平间距 */
+/* 垂直间距 */
+/* 透明度 */
+/* 文章场景相关 */
+page {
+  min-height: 100vh;
+  background-color: #f6f7fb;
+}
+.box-top {
+  display: flex;
+  align-items: center;
+  width: 690rpx;
+  height: 112rpx;
+  background: #ffffff;
+  box-shadow: 0rpx 2rpx 18rpx 0rpx rgba(0, 0, 0, 0.06);
+  border-radius: 20rpx;
+  margin: 30rpx auto;
+}
+.box-top image {
+  width: 56rpx;
+  height: 56rpx;
+  margin: 28rpx 23rpx 28rpx 29rpx;
+}
+.box-top .bind {
+  margin-left: 307rpx;
+}
+.box-top .right {
+  width: 26rpx;
+  height: 26rpx;
+}
+.word {
+  margin-left: 30rpx;
+  font-size: 24rpx;
+}
+.draw-box {
+  background: #ffffff;
+  box-shadow: 0rpx 2rpx 18rpx 0rpx rgba(0, 0, 0, 0.06);
+  border-radius: 20rpx;
+}
+.draw-box-info {
+  font-size: 24rpx;
+  font-weight: 500;
+  color: #ff4d4d;
+}
+.draw-box-info1 {
+  font-size: 24rpx;
+  font-weight: 500;
+  color: #808080;
+}
+.checked {
+  display: none;
+}
+.box-down {
+  width: 690rpx;
+  height: 310rpx;
+  background: #ffffff;
+  box-shadow: 0rpx 2rpx 18rpx 0rpx rgba(0, 0, 0, 0.06);
+  border-radius: 20rpx;
+  margin: 30rpx auto;
+}
+.box-down .money {
+  width: 100%;
+  height: 105rpx;
+  line-height: 105rpx;
+  margin-left: 34rpx;
+}
+.box-down .money-center {
+  display: flex;
+}
+.box-down .money-center .box-right {
+  font-size: 48rpx;
+  margin-left: 52rpx;
+}
+.box-down .money-center .empty-harp {
+  width: 1rpx;
+  height: 70rpx;
+  background-color: #e8e8e8;
+  margin-left: 18rpx;
+}
+.box-down .money-center input {
+  font-size: 40rpx;
+  margin-left: 30rpx;
+}
+.box-down .empty {
+  width: 630rpx;
+  height: 1rpx;
+  background: #f0f0f0;
+  margin: 40rpx auto 0 auto;
+}
+.box-down .money-down {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 96rpx;
+  font-size: 28rpx;
+  padding: 0 30rpx;
+}
+.box-down .total {
+  color: #ff5c5c;
+  font-weight: bold;
+}
+.tips {
+  margin: 0 30rpx;
+  color: #ff5c5c;
+  font-weight: bold;
+  height: 50rpx;
+}
+.bing-ali {
+  margin: 0rpx auto;
+  color: #55b5ff;
+  width: 300rpx;
+  text-align: center;
+}
+.end {
+  bottom: 40%;
+  left: 0;
+  right: 0;
+  width: 690rpx;
+  height: 96rpx;
+  background: #55b5ff;
+  border-radius: 48rpx;
+  line-height: 96rpx;
+  text-align: center;
+  margin: 0 auto;
+  color: #ebebeb;
+  font-size: 36rpx;
+}
+

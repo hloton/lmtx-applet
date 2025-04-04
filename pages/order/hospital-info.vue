@@ -134,7 +134,9 @@
 				this.$store.commit('SET_ORDER_DATA', {
 					project_type: data.id,//这里是项目id
 					money: data.is_price ? data.original_price : data.price, //是原价还是现价
-					from: 1
+					from: 1,
+					hospital_name:this.info.name,
+					hospital_id:this.info.id
 				})
 				this.$navto('/pages/order/create-order', true)
 			},

@@ -1,0 +1,11 @@
+{
+  "navigationBarTitleText": "",
+  "usingComponents": {
+    "top-navigation": "/components/top-navigation/top-navigation",
+    "step-bar": "/components/step-bar/step-bar",
+    "order-status": "/pages/order/components/status",
+    "order-address": "/pages/order/components/address",
+    "order-appointment": "/pages/order/components/appointment",
+    "order-infor": "/pages/order/components/info"
+  }
+}

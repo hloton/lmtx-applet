@@ -1,0 +1,1 @@
+<view><top-navigation vue-id="8056adf0-1" bgColor="#ffffff" bind:__l="__l" vue-slots="{{['left-slot']}}"><text slot="left-slot">{{''+(type==1?'隐私协议':type==2?'服务条款':'服务条款同意书')+''}}</text></top-navigation><view class="content"><u-parse vue-id="8056adf0-2" content="{{content}}" bind:__l="__l"></u-parse></view></view>

@@ -114,7 +114,7 @@ page {
 }
 .content .service-content .service image {
   width: 100%;
-  height: 1184rpx;
+  height: auto;
 }
 .content .evaluation {
   margin-top: 30rpx;

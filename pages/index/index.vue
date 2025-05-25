@@ -8,7 +8,7 @@
 		<view class="occupi"></view>
 		<view class="tabbar">
 			<view v-for="(item,index) in tabs" :key="index" @click="changeTabbar(index)">
-				<image class="tabbar-icon" :src="index == activeIndex ? item.selectedIconPath : item.iconPath" mode="aspectFit"></image>
+				<image class="tabbar-icon" :src="index == activeIndex ? item.selectedIconPath : item.iconPath"></image>
 				<text :class="{'active-text':index == activeIndex}">{{item.text}}</text>
 			</view>
 		</view>
@@ -190,7 +190,6 @@
 			background-color: #ffffff;
 			font-size: 22rpx;
 			color: #061630;
-	
 			view {
 				flex: 1;
 				text-align: center;

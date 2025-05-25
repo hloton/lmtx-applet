@@ -96,7 +96,7 @@
 							}else this.active=0
 						}else{//用户视角
 							if(this.orderDetail.status==1&&this.orderDetail.staff_id){
-								this.active=1
+								this.active=2
 							}else this.active=this.orderDetail.status
 						}
 						if(this.orderDetail.status==4){//已取消

@@ -19,7 +19,7 @@
 				</template>
 			</top-navigation>
 			<!-- 顶部背景图片 -->
-			<image src="/static/images/home/bg.png" class="title-bg"></image>
+			<image src="/static/images/home/bg.png" class="title-bg" ></image>
 			<view style="padding: 30rpx;padding-bottom: 0;">
 				<u-swiper radius="12" height="300rpx" :list="swiperList" @click="clickswiper" keyName="ad_image_url" indicator indicatorMode="dot" circular></u-swiper>
 				
@@ -53,7 +53,7 @@
 						<view class="hospital-item" v-for="(item, index) in list" :key="index" @click="$navto('/pages/order/hospital-info?id=' + item.id)">
 						
 <!-- 						<view class="hospital-item" v-for="(item, index) in list" :key="index" @tap="toProjectList(item.id, item.name)"> -->
-							<image :src="$getImgUrl() + item.ext1" class="logo" mode="scaleToFill"></image>
+							<image :src="$getImgUrl() + item.ext1" class="logo" mode="aspectFit"></image>
 							<view class="right">
 								<view class="hospital-name">{{ item.name }}</view>
 								<view class="label">
@@ -99,7 +99,7 @@
 							</view>
 						</view>
 						<u-empty mode="data" v-if="!staffList.length" text="暂无服务人员"></u-empty>
-						<u-loadmore :status="status" v-if="staffList.length" />
+						<u-loadmore :status="staffstatus" v-if="staffList.length" />
 					</view>
 					<view class="copyright" v-if="companyName">©技术支持：{{ companyName }}</view>
 				</view>

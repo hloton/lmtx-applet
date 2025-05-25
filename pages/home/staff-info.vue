@@ -1,7 +1,7 @@
 <template>
 	<view class="staff-box">
 		<top-navigation bgColor="#ffffff"><template #left-slot></template></top-navigation>
-		<image src="/static/images/home/bg.png" class="title-bg"></image>
+		<image src="/static/images/home/bg.png" class="title-bg" ></image>
 		<view class="content">
 			<view class="staff-item">
 				<image :src="$getHost() + profile" class="avatar" mode="scaleToFill"></image>
@@ -201,8 +201,8 @@ export default {
 		.list-image {
 			
 			
-			margin-top: -60rpx;
-			margin-bottom: 60rpx;
+			//margin-top: -60rpx;
+			//margin-bottom: 60rpx;
 
 		}
 

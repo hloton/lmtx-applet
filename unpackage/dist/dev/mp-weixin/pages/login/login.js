@@ -101,7 +101,7 @@ var components
 try {
   components = {
     topNavigation: function () {
-      return __webpack_require__.e(/*! import() | components/top-navigation/top-navigation */ "components/top-navigation/top-navigation").then(__webpack_require__.bind(null, /*! @/components/top-navigation/top-navigation.vue */ 425))
+      return __webpack_require__.e(/*! import() | components/top-navigation/top-navigation */ "components/top-navigation/top-navigation").then(__webpack_require__.bind(null, /*! @/components/top-navigation/top-navigation.vue */ 433))
     },
   }
 } catch (e) {
@@ -247,8 +247,8 @@ var _default = {
     //获取用户信息和登录code
     getUser: function getUser() {
       var _this = this;
-      if (this.lock) return;
-      this.lock = true;
+      // if(this.lock) return
+      // this.lock= true;
       //通过微信获取用户信息
       uni.getUserProfile({
         lang: 'zh_CN',
@@ -267,11 +267,13 @@ var _default = {
             },
             fail: function fail() {
               // this.lock = false;
+              console.log('微信失败？？？');
             }
           });
         },
         fail: function fail(error) {
           // this.lock = false;
+          console.log('失败？？？');
         }
       });
       // const temp = await wx.getUserProfile({
@@ -327,18 +329,19 @@ var _default = {
                   break;
                 }
                 _this2.phone = res.data;
-                uni.showModal({
-                  title: '授权',
-                  content: '是否授权',
-                  success: function success(tapRes) {
-                    if (tapRes.confirm) {
-                      _this2.getUser();
-                    }
-                    if (tapRes.cancel) {
-                      _this2.$toast('取消登录');
-                    }
-                  }
-                });
+                _this2.getUser();
+                // uni.showModal({
+                // 	title: '授权',
+                // 	content: '是否授权',
+                // 	success: tapRes => {
+                // 		if (tapRes.confirm) {
+                // 			this.getUser();
+                // 		}
+                // 		if (tapRes.cancel) {
+                // 			this.$toast('取消登录');
+                // 		}
+                // 	}
+                // })
                 _context.next = 23;
                 break;
               case 21:

@@ -93,6 +93,7 @@ export default {
 			
 			this.pageNum = 1;
 			this.rewardList = [];
+			this.hasMore=true;
 			this.getawardDetail();
 		}
 	}

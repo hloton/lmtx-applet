@@ -66,8 +66,8 @@
 		methods:{
 			//获取用户信息和登录code
 			getUser(){
-				if(this.lock) return
-				this.lock= true;
+				// if(this.lock) return
+				// this.lock= true;
 				//通过微信获取用户信息
 				uni.getUserProfile({
 					lang: 'zh_CN',
@@ -86,11 +86,13 @@
 							},
 							fail: () => {
 								// this.lock = false;
+								console.log('微信失败？？？');
 							}
 						});
 					},
 					fail: error => {
 						// this.lock = false;
+						console.log('失败？？？');
 					}
 			})
 			// const temp = await wx.getUserProfile({
@@ -126,18 +128,19 @@
 			const res = await this.$request('/applet/index/login/getPhone', params);
 			if(res.success){
 				this.phone=res.data
-				uni.showModal({
-					title: '授权',
-					content: '是否授权',
-					success: tapRes => {
-						if (tapRes.confirm) {
-							this.getUser();
-						}
-						if (tapRes.cancel) {
-							this.$toast('取消登录');
-						}
-					}
-				})
+				this.getUser();
+				// uni.showModal({
+				// 	title: '授权',
+				// 	content: '是否授权',
+				// 	success: tapRes => {
+				// 		if (tapRes.confirm) {
+				// 			this.getUser();
+				// 		}
+				// 		if (tapRes.cancel) {
+				// 			this.$toast('取消登录');
+				// 		}
+				// 	}
+				// })
 			}else{
 				this.$toast(res.msg);
 				// this.lock = false

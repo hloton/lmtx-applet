@@ -295,7 +295,7 @@
 	@import "../../libs/css/components.scss";
 
 	.u-tabs {
-
+-webkit-overflow-scrolling: touch;
 		&__wrapper {
 			@include flex;
 			align-items: center;
@@ -304,12 +304,23 @@
 				flex: 1;
 				/* #ifndef APP-NVUE */
 				overflow: auto hidden;
+				/* 新增以下iOS专属样式 */
+				/* #ifdef MP-WEIXIN */
+				-webkit-overflow-scrolling: touch !important;
 				/* #endif */
+				/* #endif */
+				
 			}
 
 			&__scroll-view {
 				@include flex;
 				flex: 1;
+				/* 确保滚动容器启用硬件加速 */
+				transform: translateZ(0);
+				/* 新增滚动优化 */
+				/* #ifdef MP-WEIXIN */
+				-webkit-overflow-scrolling: touch !important;
+				/* #endif */
 			}
 
 			&__nav {

@@ -33,6 +33,9 @@ view.data-v-48634e29, scroll-view.data-v-48634e29, swiper-item.data-v-48634e29 {
   align-items: stretch;
   align-content: flex-start;
 }
+.u-tabs.data-v-48634e29 {
+  -webkit-overflow-scrolling: touch;
+}
 .u-tabs__wrapper.data-v-48634e29 {
   display: flex;
   flex-direction: row;
@@ -41,11 +44,18 @@ view.data-v-48634e29, scroll-view.data-v-48634e29, swiper-item.data-v-48634e29 {
 .u-tabs__wrapper__scroll-view-wrapper.data-v-48634e29 {
   flex: 1;
   overflow: auto hidden;
+  /* 新增以下iOS专属样式 */
+  -webkit-overflow-scrolling: touch !important;
 }
 .u-tabs__wrapper__scroll-view.data-v-48634e29 {
   display: flex;
   flex-direction: row;
   flex: 1;
+  /* 确保滚动容器启用硬件加速 */
+  -webkit-transform: translateZ(0);
+          transform: translateZ(0);
+  /* 新增滚动优化 */
+  -webkit-overflow-scrolling: touch !important;
 }
 .u-tabs__wrapper__nav.data-v-48634e29 {
   display: flex;

@@ -101,13 +101,13 @@ var components
 try {
   components = {
     topNavigation: function () {
-      return __webpack_require__.e(/*! import() | components/top-navigation/top-navigation */ "components/top-navigation/top-navigation").then(__webpack_require__.bind(null, /*! @/components/top-navigation/top-navigation.vue */ 425))
+      return __webpack_require__.e(/*! import() | components/top-navigation/top-navigation */ "components/top-navigation/top-navigation").then(__webpack_require__.bind(null, /*! @/components/top-navigation/top-navigation.vue */ 433))
     },
     uAlert: function () {
-      return Promise.all(/*! import() | uni_modules/uview-ui/components/u-alert/u-alert */[__webpack_require__.e("common/vendor"), __webpack_require__.e("uni_modules/uview-ui/components/u-alert/u-alert")]).then(__webpack_require__.bind(null, /*! @/uni_modules/uview-ui/components/u-alert/u-alert.vue */ 658))
+      return Promise.all(/*! import() | uni_modules/uview-ui/components/u-alert/u-alert */[__webpack_require__.e("common/vendor"), __webpack_require__.e("uni_modules/uview-ui/components/u-alert/u-alert")]).then(__webpack_require__.bind(null, /*! @/uni_modules/uview-ui/components/u-alert/u-alert.vue */ 666))
     },
     uNotify: function () {
-      return Promise.all(/*! import() | uni_modules/uview-ui/components/u-notify/u-notify */[__webpack_require__.e("common/vendor"), __webpack_require__.e("uni_modules/uview-ui/components/u-notify/u-notify")]).then(__webpack_require__.bind(null, /*! @/uni_modules/uview-ui/components/u-notify/u-notify.vue */ 666))
+      return Promise.all(/*! import() | uni_modules/uview-ui/components/u-notify/u-notify */[__webpack_require__.e("common/vendor"), __webpack_require__.e("uni_modules/uview-ui/components/u-notify/u-notify")]).then(__webpack_require__.bind(null, /*! @/uni_modules/uview-ui/components/u-notify/u-notify.vue */ 674))
     },
   }
 } catch (e) {

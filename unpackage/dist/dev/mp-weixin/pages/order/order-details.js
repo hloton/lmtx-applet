@@ -101,10 +101,10 @@ var components
 try {
   components = {
     topNavigation: function () {
-      return __webpack_require__.e(/*! import() | components/top-navigation/top-navigation */ "components/top-navigation/top-navigation").then(__webpack_require__.bind(null, /*! @/components/top-navigation/top-navigation.vue */ 425))
+      return __webpack_require__.e(/*! import() | components/top-navigation/top-navigation */ "components/top-navigation/top-navigation").then(__webpack_require__.bind(null, /*! @/components/top-navigation/top-navigation.vue */ 433))
     },
     stepBar: function () {
-      return __webpack_require__.e(/*! import() | components/step-bar/step-bar */ "components/step-bar/step-bar").then(__webpack_require__.bind(null, /*! @/components/step-bar/step-bar.vue */ 521))
+      return __webpack_require__.e(/*! import() | components/step-bar/step-bar */ "components/step-bar/step-bar").then(__webpack_require__.bind(null, /*! @/components/step-bar/step-bar.vue */ 529))
     },
   }
 } catch (e) {
@@ -175,27 +175,27 @@ function ownKeys(object, enumerableOnly) { var keys = Object.keys(object); if (O
 function _objectSpread(target) { for (var i = 1; i < arguments.length; i++) { var source = null != arguments[i] ? arguments[i] : {}; i % 2 ? ownKeys(Object(source), !0).forEach(function (key) { (0, _defineProperty2.default)(target, key, source[key]); }) : Object.getOwnPropertyDescriptors ? Object.defineProperties(target, Object.getOwnPropertyDescriptors(source)) : ownKeys(Object(source)).forEach(function (key) { Object.defineProperty(target, key, Object.getOwnPropertyDescriptor(source, key)); }); } return target; }
 var stepBar = function stepBar() {
   __webpack_require__.e(/*! require.ensure | components/step-bar/step-bar */ "components/step-bar/step-bar").then((function () {
-    return resolve(__webpack_require__(/*! @/components/step-bar/step-bar.vue */ 521));
+    return resolve(__webpack_require__(/*! @/components/step-bar/step-bar.vue */ 529));
   }).bind(null, __webpack_require__)).catch(__webpack_require__.oe);
 };
 var orderInfor = function orderInfor() {
   __webpack_require__.e(/*! require.ensure | pages/order/components/info */ "pages/order/components/info").then((function () {
-    return resolve(__webpack_require__(/*! ./components/info.vue */ 615));
+    return resolve(__webpack_require__(/*! ./components/info.vue */ 623));
   }).bind(null, __webpack_require__)).catch(__webpack_require__.oe);
 };
 var orderStatus = function orderStatus() {
   __webpack_require__.e(/*! require.ensure | pages/order/components/status */ "pages/order/components/status").then((function () {
-    return resolve(__webpack_require__(/*! ./components/status.vue */ 622));
+    return resolve(__webpack_require__(/*! ./components/status.vue */ 630));
   }).bind(null, __webpack_require__)).catch(__webpack_require__.oe);
 };
 var orderAddress = function orderAddress() {
   __webpack_require__.e(/*! require.ensure | pages/order/components/address */ "pages/order/components/address").then((function () {
-    return resolve(__webpack_require__(/*! ./components/address.vue */ 629));
+    return resolve(__webpack_require__(/*! ./components/address.vue */ 637));
   }).bind(null, __webpack_require__)).catch(__webpack_require__.oe);
 };
 var orderAppointment = function orderAppointment() {
   __webpack_require__.e(/*! require.ensure | pages/order/components/appointment */ "pages/order/components/appointment").then((function () {
-    return resolve(__webpack_require__(/*! ./components/appointment.vue */ 636));
+    return resolve(__webpack_require__(/*! ./components/appointment.vue */ 644));
   }).bind(null, __webpack_require__)).catch(__webpack_require__.oe);
 };
 var _default = {
@@ -265,7 +265,7 @@ var _default = {
           } else {
             //用户视角
             if (_this.orderDetail.status == 1 && _this.orderDetail.staff_id) {
-              _this.active = 1;
+              _this.active = 2;
             } else _this.active = _this.orderDetail.status;
           }
           if (_this.orderDetail.status == 4) {

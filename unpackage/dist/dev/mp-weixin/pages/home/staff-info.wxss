@@ -113,10 +113,6 @@
   padding: 30rpx;
   margin-bottom: 80rpx;
 }
-.list-box .list-row .list-image.data-v-d458547c {
-  margin-top: -60rpx;
-  margin-bottom: 60rpx;
-}
 .list-box .list-row .list-title.data-v-d458547c {
   min-width: 118rpx;
   height: 29rpx;

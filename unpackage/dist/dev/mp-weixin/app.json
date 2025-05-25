@@ -30,7 +30,8 @@
     "pages/mine/staff/withdraw-list",
     "pages/mine/staff/withdraw-record",
     "pages/mine/staff/earnest-detail",
-    "pages/mine/staff/reward-detail"
+    "pages/mine/staff/reward-detail",
+    "pages/home/staff-info"
   ],
   "subPackages": [],
   "window": {

@@ -192,7 +192,7 @@ export default {
 			this.getProject();
 			this.getConfigPhone();
 			this.getSwiper();
-			// this.queryServeStaffList();
+			this.queryServeStaffList();
 		}
 	},
 	created() {
@@ -201,7 +201,7 @@ export default {
 		this.getSwiper();
 		this.getProject();
 		this.getConfigPhone();
-		//this.queryServeStaffList();
+		this.queryServeStaffList();
 		
 		// if (!this.curAddress.cityCode) {
 		// 	this.$navto('/pages/home/region');
